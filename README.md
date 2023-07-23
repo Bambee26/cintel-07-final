@@ -106,9 +106,6 @@ See the earlier [SHINYAPPS.md](https://github.com/denisecase/cintel-02-app/blob/
 - Name: SHINYAPPS_TOKEN, Secret: (paste token )
 - Name: SHINYAPPS_SECRET, Secret: (paste secret)
 
-```shell
-rsconnect deploy shiny . --name denisecase --title cintel-05-live-updates
-```
 
 -----
 
