@@ -98,13 +98,17 @@ before running the app again.
 
 ## Deploy the App
 
-Verify repository name in .github/workflows/deploy.yml.
-Login to [shinyapps.io](https://www.shinyapps.io/) then Account / Tokens to find values for 3 repo secrets.
+Add and customize .github/workflows/deploy.yml.
+Login to [shinyapps.io](https://www.shinyapps.io/) then Account / Tokens and add 3 repo secrets.
 See the earlier [SHINYAPPS.md](https://github.com/denisecase/cintel-02-app/blob/main/SHINYAPPS.md) for details.
 
 - Name: SHINYAPPS_ACCOUNT, Secret: Paste shinyapps.io account name
 - Name: SHINYAPPS_TOKEN, Secret: (paste token )
 - Name: SHINYAPPS_SECRET, Secret: (paste secret)
+
+```shell
+rsconnect deploy shiny . --name denisecase --title cintel-05-live-updates
+```
 
 -----
 
