@@ -4,11 +4,6 @@
 - Website: [cintel-05-live-updates](https://denisecase.github.io/cintel-05-live-updates/)
 - Author: [Denise Case](https://github.com/denisecase)
 
-
-We add another important tool: Holoviews Panel. 
-
-Note: 🚀 Rocket Tips are for learners who want to go beyond the basics. 
-They are NOT required but can improve our workflow, increase productivity, and make things more enjoyable.
 -----
 
 ## Copy This Repository
