@@ -106,7 +106,6 @@ See the earlier [SHINYAPPS.md](https://github.com/denisecase/cintel-02-app/blob/
 - Name: SHINYAPPS_TOKEN, Secret: (paste token )
 - Name: SHINYAPPS_SECRET, Secret: (paste secret)
 
-
 -----
 
 ## ⚠️ Delete Hosted App Before Pushing to GitHub
