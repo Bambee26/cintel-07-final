@@ -1,0 +1,16 @@
+htmltools 
+ipywidgets
+jinja2
+jupyter_bokeh 
+matplotlib
+pandas
+plotly 
+plotnine
+pyodide-py
+python-dotenv
+requests
+rsconnect-python
+shiny 
+shinyswatch 
+shinywidgets 
+yfinance
