@@ -25,7 +25,13 @@ def get_mtcars_inputs():
             id="MTCARS_LOCATION_SELECT",
             label="Choose a location",
             choices=["Temescal Valley CA", "Bothell WA" , "Scottsdale AZ"],
-            selected="TEmescal Valley CA",
+            selected="Temescal Valley CA",
+        ),
+        ui.input_select(
+            id="MTCARS_STOCK_SELECT",
+            label="Choose a company",
+            choices=["Tesla Inc", "General Motors Company", "Toyota Motor Corporation", "Ford Motor Company", "Honda Motor Co"],
+            selected = "Tesla Inc",
         ),
         ui.tags.hr(),
         ui.tags.section(
