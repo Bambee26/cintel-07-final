@@ -57,7 +57,7 @@ def get_mtcars_server_functions(input, output, session):
     # First, declare shared reactive values (used between functions) up front
     # Initialize the values on startup
 
-    reactive_location = reactive.Value("ELY MN")
+    reactive_location = reactive.Value("Temescal Valley CA")
 
     # Previously, we had a single reactive dataframe to hold filtered results
     reactive_df = reactive.Value()
