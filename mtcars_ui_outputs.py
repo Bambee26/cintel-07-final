@@ -21,6 +21,8 @@ def get_mtcars_outputs():
             ui.tags.br(),
             output_widget("mtcars_location_chart"),
             ui.tags.br(),
+            ui.h3("Continuous Updates (Stock API)"),
+            ui.tags.br(),
             ui.output_text("mtcars_stock_string"),
             ui.tags.br(),
             ui.output_ui("mtcars_stock_table"),

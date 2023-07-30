@@ -16,11 +16,11 @@ logger, log_filename = setup_logger(__file__)
 
 def lookup_ticker(company):
     stocks_dictionary = {
-        "Tesla Inc": "TSLA",
-        "General Motors Company": "GM",
-        "Toyota Motor Corporation": "TM",
-        "Ford Motor Company": "F",
-        "Honda Motor Co": "HMC",
+        "Nordstrom Inc": "JWN",
+        "Lululemon Athletica Inc.": "LULU",
+        "Starbucks Corporation": "SBUX",
+        "NIKE Inc.": "NKE",
+        "Amazon.com Inc.": "AMZN",
     }
     
     ticker = stocks_dictionary[company]
@@ -39,7 +39,7 @@ async def get_stock_price(ticker):
 
 def init_csv_file(file_path):
     df_empty = pd.DataFrame(
-        columns=["Company", "Ticker", "Time", "Stock_Price"]
+        columns=["Company", "Ticker", "Time", "Stock_price"]
     )
     df_empty.to_csv(file_path, index=False)
 
@@ -48,11 +48,11 @@ async def update_csv_stock():
     logger.info("Calling update_csv_stock")
     try:
         companies = [
-        "Tesla Inc",
-        "General Motors Company",
-        "Toyota Motor Corporation",
-        "Ford Motor Company",
-        "Honda Motor Co",
+        "Nordstrom Inc.",
+        "Lululemon Athletica Inc.",
+        "Starbucks Corporation",
+        "NIKE Inc",
+        "Amazon.com Inc.",
         ]
 
         update_interval = 60  # Update every 1 minute (60 seconds)
@@ -65,7 +65,7 @@ async def update_csv_stock():
         # Use a deque to store just the last, most recent 10 readings in order
         records_deque = deque(maxlen=num_updates)
 
-        fp = Path(__file__).parent.joinpath("data").joinpath("mtcars_stock.csv")
+        fp = Path(__file__).parent.joinpath("data").joinpath("mtcars_stocks.csv")
 
         # Check if the file exists, if not, create it with only the column headings
         if not os.path.exists(fp):
@@ -82,7 +82,7 @@ async def update_csv_stock():
                     "Company": company,
                     "Ticker": ticker,
                     "Time": time_now,
-                    "Price": new_price,
+                    "Price": new_price,                 
                 }
                 records_deque.append(new_record)
 
@@ -97,4 +97,4 @@ async def update_csv_stock():
             await asyncio.sleep(update_interval)
 
     except Exception as e:
-        logger.error(f"ERROR in update_csv_stocks: {e}")
+        logger.error(f"ERROR in update_csv_stock: {e}")

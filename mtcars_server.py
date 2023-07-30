@@ -58,7 +58,7 @@ def get_mtcars_server_functions(input, output, session):
     # Initialize the values on startup
 
     reactive_location = reactive.Value("Temescal Valley CA")
-    reactive_stock = reactive.Value("Tesla Inc")
+    reactive_stock = reactive.Value("Norstrom Inc.")
 
     # Previously, we had a single reactive dataframe to hold filtered results
     reactive_df = reactive.Value()
@@ -199,9 +199,9 @@ def get_mtcars_server_functions(input, output, session):
         plotly_express_plot.update_layout(title="Continuous Temperature (F)")
         return plotly_express_plot
     
-    ##############################
-#Continuous Stock Update Code#
-##############################
+###############################################################
+# CONTINUOUS STOCK UPDATES (string, table, chart)
+###############################################################
 
     @reactive.Effect
     @reactive.event(input.MTCARS_STOCK_SELECT)
@@ -240,7 +240,7 @@ def get_mtcars_server_functions(input, output, session):
         df = get_mtcars_stock_df()
         # Filter the table based off of the selected stock
         stock_df = df[df["Company"] == reactive_stock.get()]
-        logger.info(f"Rendering Price table with {len(stock_df)} rows")
+        logger.info(f"Rendering price table with {len(stock_df)} rows")
         return stock_df
 
     @output
@@ -252,7 +252,7 @@ def get_mtcars_server_functions(input, output, session):
         stock_df = df[df["Company"] == reactive_stock.get()]
         logger.info(f"Rendering stock chart with {len(stock_df)} points")
         plotly_express_plot = px.line(
-            stock_df, x="Time", y="Price", color="Company", markers=True
+            stock_df, x="Time", y="Stock_price", color="Company", markers=True
         )
         plotly_express_plot.update_layout(title="Continuous Price (USD)")
         return plotly_express_plot    
@@ -272,6 +272,9 @@ def get_mtcars_server_functions(input, output, session):
         mtcars_location_string,
         mtcars_location_table,
         mtcars_location_chart,
+        mtcars_stock_string,
+        mtcars_stock_table,
+        mtcars_stock_chart,
     ]
 
 

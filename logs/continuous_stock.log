@@ -1,0 +1,13 @@
+2023-07-30 14:44:23,988.continuous_stock.INFO =============================================================
+2023-07-30 14:44:23,988.continuous_stock.INFO Today is 2023-07-30 at 02:44 PM
+2023-07-30 14:44:23,988.continuous_stock.INFO This file is running on: nt Windows 10
+2023-07-30 14:44:23,988.continuous_stock.INFO The Python version is: 3.11.4
+2023-07-30 14:44:24,003.continuous_stock.INFO The active environment path is:   C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-05-interactive\cintel-05-live-updates\.venv
+2023-07-30 14:44:24,003.continuous_stock.INFO The current working directory is: C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-05-interactive\cintel-05-live-updates
+2023-07-30 14:44:24,003.continuous_stock.INFO =============================================================
+2023-07-30 14:44:32,076.continuous_stock.INFO Calling update_csv_stock
+2023-07-30 14:44:32,076.continuous_stock.INFO update_interval: 60
+2023-07-30 14:44:32,076.continuous_stock.INFO total_runtime: 900
+2023-07-30 14:44:32,076.continuous_stock.INFO num_updates: 10
+2023-07-30 14:44:32,076.continuous_stock.INFO Initialized csv file at C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-05-interactive\cintel-05-live-updates\data\mtcars_stocks.csv
+2023-07-30 14:44:32,076.continuous_stock.ERROR ERROR in update_csv_stock: 'Nordstrom Inc.'
