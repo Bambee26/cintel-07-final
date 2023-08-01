@@ -58,7 +58,7 @@ def get_mtcars_server_functions(input, output, session):
     # Initialize the values on startup
 
     reactive_location = reactive.Value("Temescal Valley CA")
-    reactive_stock = reactive.Value("Norstrom Inc.")
+    reactive_stock = reactive.Value("Norstrom Inc")
 
     # Previously, we had a single reactive dataframe to hold filtered results
     reactive_df = reactive.Value()
@@ -252,7 +252,7 @@ def get_mtcars_server_functions(input, output, session):
         stock_df = df[df["Company"] == reactive_stock.get()]
         logger.info(f"Rendering stock chart with {len(stock_df)} points")
         plotly_express_plot = px.line(
-            stock_df, x="Time", y="Stock_price", color="Company", markers=True
+            stock_df, x="Time", y="Price", color="Company", markers=True
         )
         plotly_express_plot.update_layout(title="Continuous Price (USD)")
         return plotly_express_plot    

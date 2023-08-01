@@ -27,11 +27,11 @@ logger, log_filename = setup_logger(__file__)
 # Takes company name string and returns stock ticker string
 def lookup_ticker(company):
     stocks_dictionary = {
-        "Nordstrom Inc.": "JWN",
-        "Lululemon Athletica Inc.": "LULU",
+        "Nordstrom Inc": "JWN",
+        "Lululemon Athletica Inc": "LULU",
         "Starbucks Corporation": "SBUX",
-        "NIKE Inc.": "NKE",
-        "Amazon.com Inc.": "AMZN",
+        "NIKE Inc": "NKE",
+        "Amazon.com Inc": "AMZN",
     }
     ticker = stocks_dictionary[company]
     return ticker
@@ -51,7 +51,7 @@ async def get_stock_price(ticker):
 
 # Create or overwrite CSV with column headings
 def init_stock_csv_file(file_path):
-    df_empty = pd.DataFrame(columns=["Company", "Ticker", "Time", "Stock_Price"])
+    df_empty = pd.DataFrame(columns=["Company", "Ticker", "Time", "Price"])
     df_empty.to_csv(file_path, index=False)
 
 
@@ -60,11 +60,11 @@ async def update_csv_stock():
     logger.info("Calling update_csv_stock")
     try:
         companies = [
-        "Nordstrom Inc.",
-        "Lululemon Athletica Inc.",
+        "Nordstrom Inc",
+        "Lululemon Athletica Inc",
         "Starbucks Corporation",
         "NIKE Inc",
-        "Amazon.com Inc.",
+        "Amazon.com Inc",
         ]
         update_interval = 60  # Update every 1 minute (60 seconds)
         total_runtime = 15 * 60  # Total runtime maximum of 15 minutes

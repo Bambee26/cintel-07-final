@@ -1,6 +1,11 @@
-Company,Ticker,Time,Stock_price
-Nordstrom Inc.,JWN,2023-07-30 12:12:42,22.95
-Lululemon Athletica Inc.,LULU,2023-07-30 12:12:42,377.96
-Starbucks Corporation,SBUX,2023-07-30 12:12:42,101.25
-NIKE Inc.,NKE,2023-07-30 12:12:42,108.62
-Amazon.com Inc.,AMZN,2023-07-30 12:12:42,131.21
+Company,Ticker,Time,Price
+Nordstrom Inc,JWN,2023-08-01 08:34:47,23.295
+Lululemon Athletica Inc,LULU,2023-08-01 08:34:47,377.08
+Starbucks Corporation,SBUX,2023-08-01 08:34:48,100.47
+NIKE Inc,NKE,2023-08-01 08:34:48,109.4075
+Amazon.com Inc,AMZN,2023-08-01 08:34:48,132.705
+Nordstrom Inc,JWN,2023-08-01 08:35:48,23.345
+Lululemon Athletica Inc,LULU,2023-08-01 08:35:49,377.08
+Starbucks Corporation,SBUX,2023-08-01 08:35:49,100.505
+NIKE Inc,NKE,2023-08-01 08:35:49,109.395
+Amazon.com Inc,AMZN,2023-08-01 08:35:49,132.6958
