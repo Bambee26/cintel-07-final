@@ -1,50 +1,62 @@
-# Task 5 start
+"""
+Store the last 15 minutes of stock values for several companies
 
+Information is updated once per minute.
+"""
+
+# Import from Standard Library
 import asyncio
 import os
-import pandas as pd
+from pathlib import Path
+from datetime import datetime
 from random import randint
+
+# Import external packages
+import pandas as pd
 import yfinance as yf
 from collections import deque
-from datetime import datetime
-from pathlib import Path
-from fetch import fetch_from_url
-from util_logger import setup_logger
 
-#Setup for the logger
+# Local imports
+from util_logger import setup_logger
+from fetch import fetch_from_url
+
+# Set up logger
 logger, log_filename = setup_logger(__file__)
 
+
+# Takes company name string and returns stock ticker string
 def lookup_ticker(company):
     stocks_dictionary = {
-        "Nordstrom Inc": "JWN",
+        "Nordstrom Inc.": "JWN",
         "Lululemon Athletica Inc.": "LULU",
         "Starbucks Corporation": "SBUX",
         "NIKE Inc.": "NKE",
         "Amazon.com Inc.": "AMZN",
     }
-    
     ticker = stocks_dictionary[company]
     return ticker
 
+
+# Takes ticker string and returns current stock price (asynchronous)
 async def get_stock_price(ticker):
-    logger.info("Calling get_stock_price for {ticker}}")
-    yf_url = f"https://query1.finance.yahoo.com/v7/finance/options/{ticker}"
-    logger.info(f"Calling yf_url to for: {yf_url}")
-    yf_results = await fetch_from_url(yf_url, "json")
-    logger.info(f"Data for {ticker}: {yf_results}")
-    # stock = yf.Ticker(ticker) # Get the stock data
-    # price = stock.history(period="1d").tail(1)["Close"][0] # Get the closing price
-    price = yf_results.data["optionChain"]["result"][0]["quote"]["regularMarketPrice"]
+    logger.info(f"Calling get_stock_price for {ticker}")
+    stock_api_url = f'https://query1.finance.yahoo.com/v7/finance/options/{ticker}'
+    logger.info(f"Calling fetch_from_url for {stock_api_url}")
+    result = await fetch_from_url(stock_api_url, "json")
+    logger.info(f'Data from openweathermap: {result}')
+    price = result.data['optionChain']['result'][0]['quote']['regularMarketPrice']
+    # price = randint(132, 148)   # Use to test code without calling API
     return price
 
-def init_csv_file(file_path):
-    df_empty = pd.DataFrame(
-        columns=["Company", "Ticker", "Time", "Stock_price"]
-    )
+
+# Create or overwrite CSV with column headings
+def init_stock_csv_file(file_path):
+    df_empty = pd.DataFrame(columns=["Company", "Ticker", "Time", "Stock_Price"])
     df_empty.to_csv(file_path, index=False)
 
+
+# Writes new stock info to CSV
 async def update_csv_stock():
-    """Update the CSV file with the latest location information."""
     logger.info("Calling update_csv_stock")
     try:
         companies = [
@@ -54,10 +66,9 @@ async def update_csv_stock():
         "NIKE Inc",
         "Amazon.com Inc.",
         ]
-
         update_interval = 60  # Update every 1 minute (60 seconds)
         total_runtime = 15 * 60  # Total runtime maximum of 15 minutes
-        num_updates = 10  # Keep the most recent 10 readings
+        num_updates = 50  # Keep the most recent 10 readings for each location
         logger.info(f"update_interval: {update_interval}")
         logger.info(f"total_runtime: {total_runtime}")
         logger.info(f"num_updates: {num_updates}")
@@ -65,11 +76,11 @@ async def update_csv_stock():
         # Use a deque to store just the last, most recent 10 readings in order
         records_deque = deque(maxlen=num_updates)
 
-        fp = Path(__file__).parent.joinpath("data").joinpath("mtcars_stocks.csv")
+        fp = Path(__file__).parent.joinpath("data").joinpath("mtcars_stock.csv")
 
         # Check if the file exists, if not, create it with only the column headings
         if not os.path.exists(fp):
-            init_csv_file(fp)
+            init_stock_csv_file(fp)
 
         logger.info(f"Initialized csv file at {fp}")
 
@@ -82,7 +93,7 @@ async def update_csv_stock():
                     "Company": company,
                     "Ticker": ticker,
                     "Time": time_now,
-                    "Price": new_price,                 
+                    "Price": new_price,
                 }
                 records_deque.append(new_record)
 

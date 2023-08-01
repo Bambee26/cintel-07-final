@@ -36,7 +36,7 @@ def get_mtcars_inputs():
             "NIKE Inc",
             "Amazon.com Inc.",
             ],
-            selected = "Nordstrom Inc",
+            selected = "Nordstrom Inc.",
         ),
         ui.tags.hr(),
         ui.tags.section(
