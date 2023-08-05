@@ -1,30 +1,49 @@
-2023-08-02 09:54:56,420.mtcars_server.INFO =============================================================
-2023-08-02 09:54:56,420.mtcars_server.INFO Today is 2023-08-02 at 09:54 AM
-2023-08-02 09:54:56,420.mtcars_server.INFO This file is running on: nt Windows 10
-2023-08-02 09:54:56,420.mtcars_server.INFO The Python version is: 3.11.4
-2023-08-02 09:54:56,421.mtcars_server.INFO The active environment path is:   C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-05-live-updates\cintel-05-live-updates-1\.venv
-2023-08-02 09:54:56,421.mtcars_server.INFO The current working directory is: C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-05-live-updates\cintel-05-live-updates-1
-2023-08-02 09:54:56,422.mtcars_server.INFO =============================================================
-2023-08-02 09:55:00,523.mtcars_server.DEBUG filter message: Showing 32 of 32 records
-2023-08-02 09:55:00,604.mtcars_server.INFO Starting mtcars_output_widget1
-2023-08-02 09:55:01,039.mtcars_server.INFO Starting mtcars_plot1
-2023-08-02 09:55:01,861.mtcars_server.INFO READING df from C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-05-live-updates\cintel-05-live-updates-1\data\mtcars_location.csv
-2023-08-02 09:55:01,879.mtcars_server.INFO READING df len 3
-2023-08-02 09:55:01,879.mtcars_server.INFO init reactive_temp_df len: 3
-2023-08-02 09:55:01,880.mtcars_server.INFO mtcars_temperature_location_string starting
-2023-08-02 09:55:01,880.mtcars_server.INFO Recent Temperature in F for Temescal Valley CA.
+2023-08-05 11:42:23,472.mtcars_server.INFO =============================================================
+2023-08-05 11:42:23,480.mtcars_server.INFO Today is 2023-08-05 at 11:42 AM
+2023-08-05 11:42:23,480.mtcars_server.INFO This file is running on: nt Windows 10
+2023-08-05 11:42:23,480.mtcars_server.INFO The Python version is: 3.11.4
+2023-08-05 11:42:23,480.mtcars_server.INFO The active environment path is:   C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-06-integration\cintel-06-integration-2\.venv
+2023-08-05 11:42:23,480.mtcars_server.INFO The current working directory is: C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-06-integration\cintel-06-integration-2
+2023-08-05 11:42:23,480.mtcars_server.INFO =============================================================
+2023-08-05 11:42:28,489.mtcars_server.DEBUG filter message: Showing 32 of 32 records
+2023-08-05 11:42:28,597.mtcars_server.INFO Starting mtcars_output_widget1
+2023-08-05 11:42:29,070.mtcars_server.INFO Starting mtcars_plot1
+2023-08-05 11:42:30,115.mtcars_server.INFO READING df from C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-06-integration\cintel-06-integration-2\data\mtcars_location.csv
+2023-08-05 11:42:30,120.mtcars_server.INFO READING df len 3
+2023-08-05 11:42:30,120.mtcars_server.INFO init reactive_temp_df len: 3
+2023-08-05 11:42:30,120.mtcars_server.INFO mtcars_temperature_location_string starting
+2023-08-05 11:42:30,120.mtcars_server.INFO Recent Temperature in F for Temescal Valley CA.
 Updated once per minute for 15 minutes.
 Keeps the most recent 10 minutes of data.
-2023-08-02 09:55:01,886.mtcars_server.INFO Rendering TEMP table with 1 rows
-2023-08-02 09:55:01,888.mtcars_server.INFO Rendering TEMP chart with 1 points
-2023-08-02 09:55:01,938.mtcars_server.INFO READING df from C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-05-live-updates\cintel-05-live-updates-1\data\mtcars_stock.csv
-2023-08-02 09:55:01,942.mtcars_server.INFO READING df len 5
-2023-08-02 09:55:01,943.mtcars_server.INFO init reactive_price_df len: 5
-2023-08-02 09:55:01,946.mtcars_server.INFO Rendering Price chart with 1 points
-2023-08-02 09:55:03,051.mtcars_server.INFO READING df from C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-05-live-updates\cintel-05-live-updates-1\data\mtcars_location.csv
-2023-08-02 09:55:03,054.mtcars_server.INFO READING df len 3
-2023-08-02 09:55:03,055.mtcars_server.INFO Rendering TEMP table with 1 rows
-2023-08-02 09:55:03,057.mtcars_server.INFO Rendering TEMP chart with 1 points
-2023-08-02 09:55:03,112.mtcars_server.INFO READING df from C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-05-live-updates\cintel-05-live-updates-1\data\mtcars_stock.csv
-2023-08-02 09:55:03,114.mtcars_server.INFO READING df len 5
-2023-08-02 09:55:03,114.mtcars_server.INFO Rendering Price chart with 1 points
+2023-08-05 11:42:30,128.mtcars_server.INFO Rendering TEMP table with 0 rows
+2023-08-05 11:42:30,136.mtcars_server.INFO Rendering TEMP chart with 0 points
+2023-08-05 11:42:30,213.mtcars_server.INFO READING df from C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-06-integration\cintel-06-integration-2\data\mtcars_stock.csv
+2023-08-05 11:42:30,214.mtcars_server.INFO READING df len 5
+2023-08-05 11:42:30,218.mtcars_server.INFO init reactive_price_df len: 5
+2023-08-05 11:42:30,225.mtcars_server.INFO mtcars_price_stocks_string starting
+2023-08-05 11:42:30,225.mtcars_server.INFO Recent Price in USD for Nordstrom Inc.
+Updated once per minute for 15 minutes.
+Keeps the most recent 10 minutes of data.
+2023-08-05 11:42:30,225.mtcars_server.INFO Rendering price table with 1 rows
+2023-08-05 11:42:30,233.mtcars_server.INFO Rendering Price chart with 1 points
+2023-08-05 11:42:35,353.mtcars_server.DEBUG filter message: Showing 32 of 32 records
+2023-08-05 11:42:35,366.mtcars_server.INFO Starting mtcars_output_widget1
+2023-08-05 11:42:35,452.mtcars_server.INFO Starting mtcars_plot1
+2023-08-05 11:42:35,913.mtcars_server.INFO READING df from C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-06-integration\cintel-06-integration-2\data\mtcars_location.csv
+2023-08-05 11:42:35,913.mtcars_server.INFO READING df len 3
+2023-08-05 11:42:35,913.mtcars_server.INFO init reactive_temp_df len: 3
+2023-08-05 11:42:35,913.mtcars_server.INFO mtcars_temperature_location_string starting
+2023-08-05 11:42:35,913.mtcars_server.INFO Recent Temperature in F for Temescal Valley CA.
+Updated once per minute for 15 minutes.
+Keeps the most recent 10 minutes of data.
+2023-08-05 11:42:35,961.mtcars_server.INFO Rendering TEMP table with 0 rows
+2023-08-05 11:42:35,980.mtcars_server.INFO Rendering TEMP chart with 0 points
+2023-08-05 11:42:36,018.mtcars_server.INFO READING df from C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-06-integration\cintel-06-integration-2\data\mtcars_stock.csv
+2023-08-05 11:42:36,018.mtcars_server.INFO READING df len 5
+2023-08-05 11:42:36,018.mtcars_server.INFO init reactive_price_df len: 5
+2023-08-05 11:42:36,018.mtcars_server.INFO mtcars_price_stocks_string starting
+2023-08-05 11:42:36,018.mtcars_server.INFO Recent Price in USD for Nordstrom Inc.
+Updated once per minute for 15 minutes.
+Keeps the most recent 10 minutes of data.
+2023-08-05 11:42:36,027.mtcars_server.INFO Rendering price table with 1 rows
+2023-08-05 11:42:36,027.mtcars_server.INFO Rendering Price chart with 1 points
