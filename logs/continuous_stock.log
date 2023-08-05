@@ -1,44 +1,28 @@
-2023-08-05 13:21:14,829.continuous_stock.INFO =============================================================
-2023-08-05 13:21:14,829.continuous_stock.INFO Today is 2023-08-05 at 01:21 PM
-2023-08-05 13:21:14,829.continuous_stock.INFO This file is running on: nt Windows 10
-2023-08-05 13:21:14,829.continuous_stock.INFO The Python version is: 3.11.4
-2023-08-05 13:21:14,829.continuous_stock.INFO The active environment path is:   C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-06-integration\cintel-06-integration-2\.venv
-2023-08-05 13:21:14,829.continuous_stock.INFO The current working directory is: C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-06-integration\cintel-06-integration-2
-2023-08-05 13:21:14,829.continuous_stock.INFO =============================================================
-2023-08-05 13:21:26,678.continuous_stock.INFO Calling update_csv_stock
-2023-08-05 13:21:26,679.continuous_stock.INFO update_interval: 60
-2023-08-05 13:21:26,679.continuous_stock.INFO total_runtime: 900
-2023-08-05 13:21:26,680.continuous_stock.INFO num_updates: 50
-2023-08-05 13:21:26,681.continuous_stock.INFO Initialized csv file at C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-06-integration\cintel-06-integration-2\data\mtcars_stock.csv
-2023-08-05 13:21:26,681.continuous_stock.INFO Calling get_stock_price for JWN
-2023-08-05 13:21:26,682.continuous_stock.INFO Calling fetch_from_url for https://query1.finance.yahoo.com/v7/finance/options/JWN
-2023-08-05 13:21:27,105.continuous_stock.INFO Data from yahoo finance: <fetch.HttpResponse object at 0x000001A8ECD34690>
-2023-08-05 13:21:27,106.continuous_stock.INFO Calling get_stock_price for LULU
-2023-08-05 13:21:27,106.continuous_stock.INFO Calling fetch_from_url for https://query1.finance.yahoo.com/v7/finance/options/LULU
-2023-08-05 13:21:27,556.continuous_stock.INFO Data from yahoo finance: <fetch.HttpResponse object at 0x000001A8ECD14AD0>
-2023-08-05 13:21:27,556.continuous_stock.INFO Calling get_stock_price for SBUX
-2023-08-05 13:21:27,556.continuous_stock.INFO Calling fetch_from_url for https://query1.finance.yahoo.com/v7/finance/options/SBUX
-2023-08-05 13:21:27,904.continuous_stock.INFO Data from yahoo finance: <fetch.HttpResponse object at 0x000001A8ECD14190>
-2023-08-05 13:21:27,919.continuous_stock.INFO Calling get_stock_price for NKE
-2023-08-05 13:21:27,919.continuous_stock.INFO Calling fetch_from_url for https://query1.finance.yahoo.com/v7/finance/options/NKE
-2023-08-05 13:21:28,362.continuous_stock.INFO Data from yahoo finance: <fetch.HttpResponse object at 0x000001A8ECD38510>
-2023-08-05 13:21:28,378.continuous_stock.INFO Calling get_stock_price for AMZN
-2023-08-05 13:21:28,378.continuous_stock.INFO Calling fetch_from_url for https://query1.finance.yahoo.com/v7/finance/options/AMZN
-2023-08-05 13:21:28,989.continuous_stock.INFO Data from yahoo finance: <fetch.HttpResponse object at 0x000001A8ECD3A950>
-2023-08-05 13:21:28,989.continuous_stock.INFO Saving prices to C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-06-integration\cintel-06-integration-2\data\mtcars_stock.csv
-2023-08-05 13:22:28,998.continuous_stock.INFO Calling get_stock_price for JWN
-2023-08-05 13:22:28,999.continuous_stock.INFO Calling fetch_from_url for https://query1.finance.yahoo.com/v7/finance/options/JWN
-2023-08-05 13:22:29,448.continuous_stock.INFO Data from yahoo finance: <fetch.HttpResponse object at 0x000001A8ED0BB010>
-2023-08-05 13:22:29,448.continuous_stock.INFO Calling get_stock_price for LULU
-2023-08-05 13:22:29,450.continuous_stock.INFO Calling fetch_from_url for https://query1.finance.yahoo.com/v7/finance/options/LULU
-2023-08-05 13:22:29,819.continuous_stock.INFO Data from yahoo finance: <fetch.HttpResponse object at 0x000001A8ED0BBF50>
-2023-08-05 13:22:29,819.continuous_stock.INFO Calling get_stock_price for SBUX
-2023-08-05 13:22:29,819.continuous_stock.INFO Calling fetch_from_url for https://query1.finance.yahoo.com/v7/finance/options/SBUX
-2023-08-05 13:22:30,292.continuous_stock.INFO Data from yahoo finance: <fetch.HttpResponse object at 0x000001A8ED0CC090>
-2023-08-05 13:22:30,293.continuous_stock.INFO Calling get_stock_price for NKE
-2023-08-05 13:22:30,293.continuous_stock.INFO Calling fetch_from_url for https://query1.finance.yahoo.com/v7/finance/options/NKE
-2023-08-05 13:22:30,648.continuous_stock.INFO Data from yahoo finance: <fetch.HttpResponse object at 0x000001A8ED0C8550>
-2023-08-05 13:22:30,650.continuous_stock.INFO Calling get_stock_price for AMZN
-2023-08-05 13:22:30,650.continuous_stock.INFO Calling fetch_from_url for https://query1.finance.yahoo.com/v7/finance/options/AMZN
-2023-08-05 13:22:31,123.continuous_stock.INFO Data from yahoo finance: <fetch.HttpResponse object at 0x000001A8ED0C2590>
-2023-08-05 13:22:31,123.continuous_stock.INFO Saving prices to C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-06-integration\cintel-06-integration-2\data\mtcars_stock.csv
+2023-08-05 16:04:03,613.continuous_stock.INFO =============================================================
+2023-08-05 16:04:03,613.continuous_stock.INFO Today is 2023-08-05 at 04:04 PM
+2023-08-05 16:04:03,614.continuous_stock.INFO This file is running on: nt Windows 10
+2023-08-05 16:04:03,614.continuous_stock.INFO The Python version is: 3.11.4
+2023-08-05 16:04:03,614.continuous_stock.INFO The active environment path is:   C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-06-integration\cintel-06-integration-2\.venv
+2023-08-05 16:04:03,614.continuous_stock.INFO The current working directory is: C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-06-integration\cintel-06-integration-2
+2023-08-05 16:04:03,615.continuous_stock.INFO =============================================================
+2023-08-05 16:04:08,244.continuous_stock.INFO Calling update_csv_stock
+2023-08-05 16:04:08,244.continuous_stock.INFO update_interval: 60
+2023-08-05 16:04:08,244.continuous_stock.INFO total_runtime: 900
+2023-08-05 16:04:08,244.continuous_stock.INFO num_updates: 50
+2023-08-05 16:04:08,245.continuous_stock.INFO Initialized csv file at C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-06-integration\cintel-06-integration-2\data\mtcars_stock.csv
+2023-08-05 16:04:08,245.continuous_stock.INFO Calling get_stock_price for JWN
+2023-08-05 16:04:08,245.continuous_stock.INFO Calling fetch_from_url for https://query1.finance.yahoo.com/v7/finance/options/JWN
+2023-08-05 16:04:08,704.continuous_stock.INFO Data from yahoo finance: <fetch.HttpResponse object at 0x00000239FAC605D0>
+2023-08-05 16:04:08,704.continuous_stock.INFO Calling get_stock_price for LULU
+2023-08-05 16:04:08,704.continuous_stock.INFO Calling fetch_from_url for https://query1.finance.yahoo.com/v7/finance/options/LULU
+2023-08-05 16:04:09,068.continuous_stock.INFO Data from yahoo finance: <fetch.HttpResponse object at 0x00000239FAD05010>
+2023-08-05 16:04:09,068.continuous_stock.INFO Calling get_stock_price for SBUX
+2023-08-05 16:04:09,068.continuous_stock.INFO Calling fetch_from_url for https://query1.finance.yahoo.com/v7/finance/options/SBUX
+2023-08-05 16:04:09,544.continuous_stock.INFO Data from yahoo finance: <fetch.HttpResponse object at 0x00000239FAD05210>
+2023-08-05 16:04:09,544.continuous_stock.INFO Calling get_stock_price for NKE
+2023-08-05 16:04:09,544.continuous_stock.INFO Calling fetch_from_url for https://query1.finance.yahoo.com/v7/finance/options/NKE
+2023-08-05 16:04:09,869.continuous_stock.INFO Data from yahoo finance: <fetch.HttpResponse object at 0x00000239FAD05790>
+2023-08-05 16:04:09,869.continuous_stock.INFO Calling get_stock_price for AMZN
+2023-08-05 16:04:09,870.continuous_stock.INFO Calling fetch_from_url for https://query1.finance.yahoo.com/v7/finance/options/AMZN
+2023-08-05 16:04:10,352.continuous_stock.INFO Data from yahoo finance: <fetch.HttpResponse object at 0x00000239FAD07990>
+2023-08-05 16:04:10,352.continuous_stock.INFO Saving prices to C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-06-integration\cintel-06-integration-2\data\mtcars_stock.csv
