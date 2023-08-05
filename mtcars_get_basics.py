@@ -28,5 +28,3 @@ def get_mtcars_df():
     # logger.info(f"Reading data from {p}")
     df = pd.read_csv(p)
     return df
-
-
