@@ -41,7 +41,7 @@ async def update_csv_files():
         await asyncio.sleep(60)  # wait for 60 seconds
 
 app_ui = ui.page_navbar(
-    shinyswatch.theme.minty(),
+    shinyswatch.theme.lux(),
     ui.nav(
         "MT_Cars",
         ui.layout_sidebar(
@@ -50,8 +50,8 @@ app_ui = ui.page_navbar(
         ),
     ),
     ui.nav(ui.a("About", href="https://github.com/bambee26")),
-    ui.nav(ui.a("GitHub", href="https://github.com/bambee26/cintel-05-live-updates")),
-    ui.nav(ui.a("App", href="https://bambee26.shinyapps.io/cintel-05-live-updates/")),
+    ui.nav(ui.a("GitHub", href="https://github.com/bambee26/cintel-06-integration")),
+    ui.nav(ui.a("App", href="https://bambee26.shinyapps.io/cintel-06-integration/")),
     ui.nav(ui.a("Plotly Express", href="https://plotly.com/python/line-and-scatter/")),
     ui.nav(ui.a("WeatherAPI", href="https://openweathermap.org/api")),
     ui.nav(ui.a("OneCallAPI", href="https://openweathermap.org/api/one-call-3")),
