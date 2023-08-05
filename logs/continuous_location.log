@@ -5,3 +5,7 @@
 2023-08-05 09:43:59,861.continuous_location.INFO The active environment path is:   C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-06-integration\cintel-06-integration-1\.venv
 2023-08-05 09:43:59,861.continuous_location.INFO The current working directory is: C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-06-integration\cintel-06-integration-1
 2023-08-05 09:43:59,861.continuous_location.INFO =============================================================
+2023-08-05 09:44:04,967.continuous_location.INFO Calling update_csv_location
+2023-08-05 09:44:04,967.continuous_location.ERROR ERROR in update_csv_location: unsupported operand type(s) for *: 'int' and 'set'
+2023-08-05 09:44:12,819.continuous_location.INFO Calling update_csv_location
+2023-08-05 09:44:12,819.continuous_location.ERROR ERROR in update_csv_location: unsupported operand type(s) for *: 'int' and 'set'
