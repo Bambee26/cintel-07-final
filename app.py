@@ -42,21 +42,21 @@ async def update_csv_files():
 app_ui = ui.page_navbar(
     shinyswatch.theme.journal(),
     ui.nav(
-        "MT_Cars",
+        "Cars",
         ui.layout_sidebar(
             get_mtcars_inputs(),
             get_mtcars_outputs(),
         ),
     ),
-    ui.nav(ui.a("About", href="https://github.com/bethharvey")),
-    ui.nav(ui.a("GitHub", href="https://github.com/bethharvey/cintel-05-live-updates")),
-    ui.nav(ui.a("App", href="https://bethharvey.shinyapps.io/cintel-05-live-updates/")),
+    ui.nav(ui.a("About", href="https://github.com/bambee26")),
+    ui.nav(ui.a("GitHub", href="https://github.com/bambee26/cintel-05-live-updates")),
+    ui.nav(ui.a("App", href="https://bambee26.shinyapps.io/cintel-05-live-updates/")),
     ui.nav(ui.a("Plotly Express", href="https://plotly.com/python/line-and-scatter/")),
     ui.nav(ui.a("WeatherAPI", href="https://openweathermap.org/api")),
     ui.nav(ui.a("OneCallAPI", href="https://openweathermap.org/api/one-call-3")),
     ui.nav(ui.a('YFinanceAPI', href='https://pypi.org/project/yfinance/')),
     ui.nav(ui.a("File_Reader", href="https://shiny.rstudio.com/py/api/reactive.file_reader.html")),
-    title=ui.h1("Harvey Dashboard"),
+    title=ui.h1("BAmbee's Dashboard"),
 )
 
 
