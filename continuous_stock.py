@@ -40,18 +40,20 @@ def lookup_ticker(company):
 # Takes ticker string and returns current stock price (asynchronous)
 async def get_stock_price(ticker):
     logger.info(f"Calling get_stock_price for {ticker}")
-    stock_api_url = f'https://query1.finance.yahoo.com/v7/finance/options/{ticker}'
+    stock_api_url = f"https://query1.finance.yahoo.com/v7/finance/options/{ticker}"
     logger.info(f"Calling fetch_from_url for {stock_api_url}")
     result = await fetch_from_url(stock_api_url, "json")
-    logger.info(f'Data from openweathermap: {result}')
-    price = result.data['optionChain']['result'][0]['quote']['regularMarketPrice']
+    logger.info(f"Data from yahoo finance: {result}")
+    price = result.data["optionChain"]["result"][0]["quote"]["regularMarketPrice"]
     # price = randint(132, 148)   # Use to test code without calling API
     return price
 
 
 # Create or overwrite CSV with column headings
 def init_stock_csv_file(file_path):
-    df_empty = pd.DataFrame(columns=["Company", "Ticker", "Time", "Price"])
+    df_empty = pd.DataFrame(
+        columns=["Company", "Ticker", "Time", "Price"]
+        )
     df_empty.to_csv(file_path, index=False)
 
 

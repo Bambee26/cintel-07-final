@@ -40,7 +40,7 @@ def get_mtcars_inputs():
         ),
         ui.tags.hr(),
         ui.tags.section(
-            ui.h3("MT Cars Table"),
+            ui.h3("Cars Table"),
             ui.tags.p("Description of each field in the table:"),
             ui.tags.ul(
                 ui.tags.li("mpg: Miles per Gallon"),
