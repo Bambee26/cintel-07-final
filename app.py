@@ -1,16 +1,14 @@
-""" Updates     
-"""
-Module 6 Repo Test
-Purpose: Use Python to create a continuous intelligence and 
-interactive analytics dashboard using Shiny for Python with 
-interactive charts from Plotly Express.
+#""" Updates     
+#Purpose: Use Python to create a continuous intelligence and 
+#interactive analytics dashboard using Shiny for Python with 
+#interactive charts from Plotly Express.
 
-Each Shiny app has two parts: 
+#Each Shiny app has two parts: 
 
-- a user interface app_ui object (similar to the HTML in a web page) 
-- a server function that provides the logic for the app (similar to JS in a web page).
+#- a user interface app_ui object (similar to the HTML in a web page) 
+#- a server function that provides the logic for the app (similar to JS in a web page).
 
-"""
+#"""
 # First, import from the Python Standard Library (no installation required).
 import asyncio
 
@@ -42,7 +40,7 @@ async def update_csv_files():
         await asyncio.sleep(60)  # wait for 60 seconds
 
 app_ui = ui.page_navbar(
-    shinyswatch.theme.minty(),
+    shinyswatch.theme.journal(),
     ui.nav(
         "Cars",
         ui.layout_sidebar(
@@ -51,11 +49,12 @@ app_ui = ui.page_navbar(
         ),
     ),
     ui.nav(ui.a("About", href="https://github.com/bambee26")),
-    ui.nav(ui.a("GitHub", href="https://github.com/bambee26/cintel-06-integration")),
-    ui.nav(ui.a("App", href="https://bambee26.shinyapps.io/cintel-06-integration/")),
+    ui.nav(ui.a("GitHub", href="https://github.com/bambee26/cintel-05-live-updates")),
+    ui.nav(ui.a("App", href="https://bambee26.shinyapps.io/cintel-05-live-updates/")),
     ui.nav(ui.a("Plotly Express", href="https://plotly.com/python/line-and-scatter/")),
     ui.nav(ui.a("WeatherAPI", href="https://openweathermap.org/api")),
     ui.nav(ui.a("OneCallAPI", href="https://openweathermap.org/api/one-call-3")),
+    ui.nav(ui.a('YFinanceAPI', href='https://pypi.org/project/yfinance/')),
     ui.nav(ui.a("File_Reader", href="https://shiny.rstudio.com/py/api/reactive.file_reader.html")),
     title=ui.h1("BAmbee's Dashboard"),
 )
