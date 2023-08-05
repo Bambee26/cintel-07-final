@@ -1,25 +1,9 @@
-<<<<<<< HEAD
-2023-08-05 11:42:22,166.continuous_location.INFO =============================================================
-2023-08-05 11:42:22,166.continuous_location.INFO Today is 2023-08-05 at 11:42 AM
-2023-08-05 11:42:22,166.continuous_location.INFO This file is running on: nt Windows 10
-2023-08-05 11:42:22,166.continuous_location.INFO The Python version is: 3.11.4
-2023-08-05 11:42:22,166.continuous_location.INFO The active environment path is:   C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-06-integration\cintel-06-integration-2\.venv
-2023-08-05 11:42:22,166.continuous_location.INFO The current working directory is: C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-06-integration\cintel-06-integration-2
-2023-08-05 11:42:22,166.continuous_location.INFO =============================================================
-2023-08-05 11:42:30,337.continuous_location.INFO Calling update_csv_location
-2023-08-05 11:42:30,337.continuous_location.ERROR ERROR in update_csv_location: unsupported operand type(s) for *: 'int' and 'set'
-2023-08-05 11:42:36,115.continuous_location.INFO Calling update_csv_location
-2023-08-05 11:42:36,123.continuous_location.ERROR ERROR in update_csv_location: unsupported operand type(s) for *: 'int' and 'set'
-=======
-2023-08-05 09:43:59,861.continuous_location.INFO =============================================================
-2023-08-05 09:43:59,861.continuous_location.INFO Today is 2023-08-05 at 09:43 AM
-2023-08-05 09:43:59,861.continuous_location.INFO This file is running on: nt Windows 10
-2023-08-05 09:43:59,861.continuous_location.INFO The Python version is: 3.11.4
-2023-08-05 09:43:59,861.continuous_location.INFO The active environment path is:   C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-06-integration\cintel-06-integration-1\.venv
-2023-08-05 09:43:59,861.continuous_location.INFO The current working directory is: C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-06-integration\cintel-06-integration-1
-2023-08-05 09:43:59,861.continuous_location.INFO =============================================================
-2023-08-05 09:44:04,967.continuous_location.INFO Calling update_csv_location
-2023-08-05 09:44:04,967.continuous_location.ERROR ERROR in update_csv_location: unsupported operand type(s) for *: 'int' and 'set'
-2023-08-05 09:44:12,819.continuous_location.INFO Calling update_csv_location
-2023-08-05 09:44:12,819.continuous_location.ERROR ERROR in update_csv_location: unsupported operand type(s) for *: 'int' and 'set'
->>>>>>> 0128a211e7d695885d2cc9654a377a32fc27d2ac
+2023-08-05 13:21:14,684.continuous_location.INFO =============================================================
+2023-08-05 13:21:14,684.continuous_location.INFO Today is 2023-08-05 at 01:21 PM
+2023-08-05 13:21:14,684.continuous_location.INFO This file is running on: nt Windows 10
+2023-08-05 13:21:14,684.continuous_location.INFO The Python version is: 3.11.4
+2023-08-05 13:21:14,684.continuous_location.INFO The active environment path is:   C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-06-integration\cintel-06-integration-2\.venv
+2023-08-05 13:21:14,684.continuous_location.INFO The current working directory is: C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-06-integration\cintel-06-integration-2
+2023-08-05 13:21:14,684.continuous_location.INFO =============================================================
+2023-08-05 13:21:26,678.continuous_location.INFO Calling update_csv_location
+2023-08-05 13:21:26,678.continuous_location.ERROR ERROR in update_csv_location: unsupported operand type(s) for *: 'int' and 'set'

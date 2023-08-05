@@ -1,17 +1,7 @@
-<<<<<<< HEAD
-2023-08-05 11:42:23,472.mtcars_get_basics.INFO =============================================================
-2023-08-05 11:42:23,472.mtcars_get_basics.INFO Today is 2023-08-05 at 11:42 AM
-2023-08-05 11:42:23,472.mtcars_get_basics.INFO This file is running on: nt Windows 10
-2023-08-05 11:42:23,472.mtcars_get_basics.INFO The Python version is: 3.11.4
-2023-08-05 11:42:23,472.mtcars_get_basics.INFO The active environment path is:   C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-06-integration\cintel-06-integration-2\.venv
-2023-08-05 11:42:23,472.mtcars_get_basics.INFO The current working directory is: C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-06-integration\cintel-06-integration-2
-2023-08-05 11:42:23,472.mtcars_get_basics.INFO =============================================================
-=======
-2023-08-05 09:44:00,828.mtcars_get_basics.INFO =============================================================
-2023-08-05 09:44:00,828.mtcars_get_basics.INFO Today is 2023-08-05 at 09:44 AM
-2023-08-05 09:44:00,828.mtcars_get_basics.INFO This file is running on: nt Windows 10
-2023-08-05 09:44:00,828.mtcars_get_basics.INFO The Python version is: 3.11.4
-2023-08-05 09:44:00,828.mtcars_get_basics.INFO The active environment path is:   C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-06-integration\cintel-06-integration-1\.venv
-2023-08-05 09:44:00,828.mtcars_get_basics.INFO The current working directory is: C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-06-integration\cintel-06-integration-1
-2023-08-05 09:44:00,828.mtcars_get_basics.INFO =============================================================
->>>>>>> 0128a211e7d695885d2cc9654a377a32fc27d2ac
+2023-08-05 13:21:16,001.mtcars_get_basics.INFO =============================================================
+2023-08-05 13:21:16,001.mtcars_get_basics.INFO Today is 2023-08-05 at 01:21 PM
+2023-08-05 13:21:16,001.mtcars_get_basics.INFO This file is running on: nt Windows 10
+2023-08-05 13:21:16,001.mtcars_get_basics.INFO The Python version is: 3.11.4
+2023-08-05 13:21:16,003.mtcars_get_basics.INFO The active environment path is:   C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-06-integration\cintel-06-integration-2\.venv
+2023-08-05 13:21:16,003.mtcars_get_basics.INFO The current working directory is: C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-06-integration\cintel-06-integration-2
+2023-08-05 13:21:16,003.mtcars_get_basics.INFO =============================================================

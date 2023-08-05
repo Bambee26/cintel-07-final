@@ -1,14 +1,14 @@
-p#""" Updates     
-#Purpose: Use Python to create a continuous intelligence and 
-#interactive analytics dashboard using Shiny for Python with 
-#interactive charts from Plotly Express.
+"""
+Purpose: Use Python to create a continuous intelligence and 
+interactive analytics dashboard using Shiny for Python with 
+interactive charts from Plotly Express.
 
-#Each Shiny app has two parts: 
+Each Shiny app has two parts: 
 
-#- a user interface app_ui object (similar to the HTML in a web page) 
-#- a server function that provides the logic for the app (similar to JS in a web page).
+- a user interface app_ui object (similar to the HTML in a web page) 
+- a server function that provides the logic for the app (similar to JS in a web page).
 
-#"""
+"""
 # First, import from the Python Standard Library (no installation required).
 import asyncio
 
@@ -36,27 +36,27 @@ async def update_csv_files():
         logger.info("Calling continuous updates ...")
         task1 = asyncio.create_task(update_csv_location())
         task2 = asyncio.create_task(update_csv_stock())
-        await asyncio.gather(task1, task2)
+        await asyncio.gather(task1)
+        await asyncio.gather(task2)
         await asyncio.sleep(60)  # wait for 60 seconds
 
 app_ui = ui.page_navbar(
-    shinyswatch.theme.journal(),
+    shinyswatch.theme.lumen(),
     ui.nav(
-        "Cars",
+        "MT_Cars",
         ui.layout_sidebar(
             get_mtcars_inputs(),
             get_mtcars_outputs(),
         ),
     ),
-    ui.nav(ui.a("About", href="https://github.com/bambee26")),
-    ui.nav(ui.a("GitHub", href="https://github.com/bambee26/cintel-05-live-updates")),
+    ui.nav(ui.a("About", href="https://github.com/Bambee26")),
+    ui.nav(ui.a("GitHub", href="https://github.com/Bambee26/cintel-05-live-updates")),
     ui.nav(ui.a("App", href="https://bambee26.shinyapps.io/cintel-05-live-updates/")),
     ui.nav(ui.a("Plotly Express", href="https://plotly.com/python/line-and-scatter/")),
     ui.nav(ui.a("WeatherAPI", href="https://openweathermap.org/api")),
     ui.nav(ui.a("OneCallAPI", href="https://openweathermap.org/api/one-call-3")),
-    ui.nav(ui.a('YFinanceAPI', href='https://pypi.org/project/yfinance/')),
     ui.nav(ui.a("File_Reader", href="https://shiny.rstudio.com/py/api/reactive.file_reader.html")),
-    title=ui.h1("BAmbee's Dashboard"),
+    title=ui.h1("Bambee's Dashboard"),
 )
 
 
