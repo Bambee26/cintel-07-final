@@ -5,3 +5,28 @@
 2023-08-05 17:40:40,609.mtcars_server.INFO The active environment path is:   C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-06-integration\cintel-06-integration\.venv
 2023-08-05 17:40:40,609.mtcars_server.INFO The current working directory is: C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-06-integration\cintel-06-integration
 2023-08-05 17:40:40,610.mtcars_server.INFO =============================================================
+2023-08-05 17:40:44,155.mtcars_server.DEBUG filter message: Showing 32 of 32 records
+2023-08-05 17:40:44,215.mtcars_server.INFO Starting mtcars_output_widget1
+2023-08-05 17:40:45,027.mtcars_server.INFO Starting mtcars_plot1
+2023-08-05 17:40:46,717.mtcars_server.INFO READING df from C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-06-integration\cintel-06-integration\data\mtcars_location.csv
+2023-08-05 17:40:46,720.mtcars_server.INFO READING df len 3
+2023-08-05 17:40:46,721.mtcars_server.INFO init reactive_temp_df len: 3
+2023-08-05 17:40:46,724.mtcars_server.INFO mtcars_temperature_location_string starting
+2023-08-05 17:40:46,726.mtcars_server.INFO Recent Temperature in F for Temescal Valley CA.
+Updated once per minute for 15 minutes.
+Keeps the most recent 10 minutes of data.
+2023-08-05 17:40:46,728.mtcars_server.INFO Rendering TEMP table with 1 rows
+2023-08-05 17:40:46,733.mtcars_server.INFO READING df from C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-06-integration\cintel-06-integration\data\mtcars_stock.csv
+2023-08-05 17:40:46,735.mtcars_server.INFO READING df len 5
+2023-08-05 17:40:46,735.mtcars_server.INFO init reactive_price_df len: 5
+2023-08-05 17:40:46,736.mtcars_server.INFO mtcars_price_stocks_string starting
+2023-08-05 17:40:46,736.mtcars_server.INFO Recent Price in USD for Nordstrom Inc.
+Updated once per minute for 15 minutes.
+Keeps the most recent 10 minutes of data.
+2023-08-05 17:40:46,737.mtcars_server.INFO Rendering price table with 1 rows
+2023-08-05 17:40:51,286.mtcars_server.INFO READING df from C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-06-integration\cintel-06-integration\data\mtcars_location.csv
+2023-08-05 17:40:51,290.mtcars_server.INFO READING df len 3
+2023-08-05 17:40:51,291.mtcars_server.INFO Rendering TEMP table with 1 rows
+2023-08-05 17:40:51,304.mtcars_server.INFO READING df from C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-06-integration\cintel-06-integration\data\mtcars_stock.csv
+2023-08-05 17:40:51,306.mtcars_server.INFO READING df len 5
+2023-08-05 17:40:51,306.mtcars_server.INFO Rendering price table with 1 rows
