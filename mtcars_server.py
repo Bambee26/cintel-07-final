@@ -195,7 +195,8 @@ def get_mtcars_server_functions(input, output, session):
         df_location = df[df["Location"] == reactive_location.get()]
         logger.info(f"Rendering TEMP chart with {len(df_location)} points")
         plotly_express_plot = px.line(
-            df_location, x="Time", y="Temp_F", color="Location", markers=True, template="plotly_dark
+            df_location, x="Time", y="Temp_F", color="Location", markers=True, template="plotly_dark"
+        )
         plotly_express_plot.update_layout(title="Continuous Temperature (F)")
         return plotly_express_plot
     
