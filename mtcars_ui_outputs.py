@@ -28,7 +28,7 @@ def get_mtcars_outputs():
             ui.tags.br(),
             ui.output_ui("mtcars_stock_table"),
             ui.tags.br(),
-            ui.tags.br(),
+            output_widget("mtcars_stock_chart"),
             ui.tags.hr(),
             ui.h3("Filtered Cars: Charts"),
             output_widget("mtcars_output_widget1"),
@@ -40,4 +40,4 @@ def get_mtcars_outputs():
             ui.output_table("mtcars_filtered_table"),
             ui.tags.hr(),
         ),
-    )
+    )   
