@@ -1,34 +1,7 @@
-2023-08-05 17:34:56,077.mtcars_server.INFO =============================================================
-2023-08-05 17:34:56,077.mtcars_server.INFO Today is 2023-08-05 at 05:34 PM
-2023-08-05 17:34:56,077.mtcars_server.INFO This file is running on: nt Windows 10
-2023-08-05 17:34:56,077.mtcars_server.INFO The Python version is: 3.11.4
-2023-08-05 17:34:56,077.mtcars_server.INFO The active environment path is:   C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-06-integration\cintel-06-integration\.venv
-2023-08-05 17:34:56,077.mtcars_server.INFO The current working directory is: C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-06-integration\cintel-06-integration
-2023-08-05 17:34:56,092.mtcars_server.INFO =============================================================
-2023-08-05 17:34:58,182.mtcars_server.DEBUG filter message: Showing 32 of 32 records
-2023-08-05 17:34:58,234.mtcars_server.INFO Starting mtcars_output_widget1
-2023-08-05 17:34:58,522.mtcars_server.INFO Starting mtcars_plot1
-2023-08-05 17:34:59,191.mtcars_server.INFO READING df from C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-06-integration\cintel-06-integration\data\mtcars_location.csv
-2023-08-05 17:34:59,191.mtcars_server.INFO READING df len 6
-2023-08-05 17:34:59,191.mtcars_server.INFO init reactive_temp_df len: 6
-2023-08-05 17:34:59,191.mtcars_server.INFO mtcars_temperature_location_string starting
-2023-08-05 17:34:59,191.mtcars_server.INFO Recent Temperature in F for Temescal Valley CA.
-Updated once per minute for 15 minutes.
-Keeps the most recent 10 minutes of data.
-2023-08-05 17:34:59,206.mtcars_server.INFO Rendering TEMP table with 2 rows
-2023-08-05 17:34:59,209.mtcars_server.INFO Rendering TEMP chart with 2 points
-2023-08-05 17:34:59,248.mtcars_server.INFO READING df from C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-06-integration\cintel-06-integration\data\mtcars_stock.csv
-2023-08-05 17:34:59,250.mtcars_server.INFO READING df len 10
-2023-08-05 17:34:59,250.mtcars_server.INFO init reactive_price_df len: 10
-2023-08-05 17:34:59,251.mtcars_server.INFO mtcars_price_stocks_string starting
-2023-08-05 17:34:59,251.mtcars_server.INFO Recent Price in USD for Nordstrom Inc.
-Updated once per minute for 15 minutes.
-Keeps the most recent 10 minutes of data.
-2023-08-05 17:34:59,253.mtcars_server.INFO Rendering price table with 2 rows
-2023-08-05 17:35:02,756.mtcars_server.INFO READING df from C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-06-integration\cintel-06-integration\data\mtcars_location.csv
-2023-08-05 17:35:02,757.mtcars_server.INFO READING df len 3
-2023-08-05 17:35:02,757.mtcars_server.INFO Rendering TEMP table with 1 rows
-2023-08-05 17:35:02,758.mtcars_server.INFO Rendering TEMP chart with 1 points
-2023-08-05 17:35:02,846.mtcars_server.INFO READING df from C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-06-integration\cintel-06-integration\data\mtcars_stock.csv
-2023-08-05 17:35:02,864.mtcars_server.INFO READING df len 5
-2023-08-05 17:35:02,864.mtcars_server.INFO Rendering price table with 1 rows
+2023-08-05 17:40:40,608.mtcars_server.INFO =============================================================
+2023-08-05 17:40:40,609.mtcars_server.INFO Today is 2023-08-05 at 05:40 PM
+2023-08-05 17:40:40,609.mtcars_server.INFO This file is running on: nt Windows 10
+2023-08-05 17:40:40,609.mtcars_server.INFO The Python version is: 3.11.4
+2023-08-05 17:40:40,609.mtcars_server.INFO The active environment path is:   C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-06-integration\cintel-06-integration\.venv
+2023-08-05 17:40:40,609.mtcars_server.INFO The current working directory is: C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-06-integration\cintel-06-integration
+2023-08-05 17:40:40,610.mtcars_server.INFO =============================================================
