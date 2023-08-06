@@ -28,10 +28,6 @@ def get_mtcars_outputs():
             ui.tags.br(),
             ui.output_ui("mtcars_stock_table"),
             ui.tags.br(),
-            ui.row(
-                ui.column(1, ui.output_image('get_image')),
-                ui.column(1, ui.h4(ui.output_text("mtcars_stock_difference"))),
-                ui.column(10, output_widget("mtcars_stock_chart"))),
             ui.tags.br(),
             ui.tags.hr(),
             ui.h3("Filtered Cars: Charts"),

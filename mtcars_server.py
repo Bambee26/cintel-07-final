@@ -187,19 +187,20 @@ def get_mtcars_server_functions(input, output, session):
         logger.info(f"Rendering TEMP table with {len(df_location)} rows")
         return df_location
 
-    @output
-    @render_widget
+    #@output
+    #@render_widget
     def mtcars_location_chart():
         df = get_mtcars_temp_df()
         # Filter the data based on the selected location
         df_location = df[df["Location"] == reactive_location.get()]
         logger.info(f"Rendering TEMP chart with {len(df_location)} points")
         plotly_express_plot = px.line(
-            df_location, x="Time", y="Temp_F", color="Location", markers=True
+            df_location, x="Time", y="Temp_F", color="Location", markers=True, template="plotly_dark"
         )
         plotly_express_plot.update_layout(title="Continuous Temperature (F)")
         return plotly_express_plot
     
+         
 ###############################################################
 # CONTINUOUS STOCK UPDATES (string, table, chart)
 ###############################################################
@@ -251,7 +252,7 @@ def get_mtcars_server_functions(input, output, session):
         df_stocks = df[df["Company"] == reactive_stock.get()]
         logger.info(f"Rendering Price chart with {len(df_stocks)} points")
         plotly_express_plot = px.line(
-            df_stocks, x="Time", y="Price", color="Company", markers=True
+            df_stocks, x="Time", y="Price", color="Company", markers=True, template="plotly_dark"
         )
         plotly_express_plot.update_layout(title="Continuous Price (USD)")
         return plotly_express_plot   

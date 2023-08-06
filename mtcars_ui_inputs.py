@@ -12,7 +12,7 @@ from shiny import ui
 
 def get_mtcars_inputs():
     return ui.panel_sidebar(
-        ui.h2("MT Cars Interaction"),
+        ui.h2("Cars Interaction"),
         ui.tags.hr(),
         ui.input_slider(
             "MTCARS_MPG_RANGE",
