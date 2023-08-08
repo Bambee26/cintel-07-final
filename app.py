@@ -41,7 +41,7 @@ async def update_csv_files():
         await asyncio.sleep(60)  # wait for 60 seconds
 
 app_ui = ui.page_navbar(
-    shinyswatch.theme.cyborg(),
+    shinyswatch.theme.darkly(),
     ui.nav(
         "Cars",
         ui.layout_sidebar(
@@ -73,6 +73,7 @@ def server(input, output, session):
     logger.info("Starting continuous updates ...")
 
     get_mtcars_server_functions(input, output, session)
+
 
 
 app = App(app_ui, server, debug=True)
