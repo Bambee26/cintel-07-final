@@ -82,7 +82,7 @@ async def get_temperature_from_openweathermap(lat, long):
     result = await fetch_from_url(open_weather_url, "json")
     logger.info(f"Data from openweathermap: {result}")
     temp_F = result.data["main"]["temp"]
-    #temp_F = randint(68, 77)
+    # temp_F = randint(68, 77)  # Use to test code without calling API
     return temp_F
 
 
