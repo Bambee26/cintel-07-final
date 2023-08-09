@@ -1,22 +1,22 @@
-2023-08-08 09:46:03,078.continuous_location.INFO =============================================================
-2023-08-08 09:46:03,078.continuous_location.INFO Today is 2023-08-08 at 09:46 AM
-2023-08-08 09:46:03,078.continuous_location.INFO This file is running on: nt Windows 10
-2023-08-08 09:46:03,078.continuous_location.INFO The Python version is: 3.11.4
-2023-08-08 09:46:03,078.continuous_location.INFO The active environment path is:   C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-06-integration\cintel-06-integration\.venv
-2023-08-08 09:46:03,078.continuous_location.INFO The current working directory is: C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-06-integration\cintel-06-integration
-2023-08-08 09:46:03,078.continuous_location.INFO =============================================================
-2023-08-08 09:46:10,954.continuous_location.INFO Calling update_csv_location
-2023-08-08 09:46:10,955.continuous_location.INFO update_interval: 60
-2023-08-08 09:46:10,955.continuous_location.INFO total_runtime: 900
-2023-08-08 09:46:10,955.continuous_location.INFO num_updates: 10
-2023-08-08 09:46:10,956.continuous_location.INFO Initialized csv file at C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-06-integration\cintel-06-integration\data\mtcars_location.csv
-2023-08-08 09:46:10,956.continuous_location.INFO Calling get_temperature_from_openweathermap for {lat}, {long}}
-2023-08-08 09:46:10,957.continuous_location.INFO Calling fetch_from_url for https://api.openweathermap.org/data/2.5/weather?lat=33.79085&lon=-117.50394&appid=854749a86f71428bfcb38228996c5834&units=imperial
-2023-08-08 09:46:11,330.continuous_location.INFO Data from openweathermap: <fetch.HttpResponse object at 0x000001D7D0719E10>
-2023-08-08 09:46:11,331.continuous_location.INFO Calling get_temperature_from_openweathermap for {lat}, {long}}
-2023-08-08 09:46:11,331.continuous_location.INFO Calling fetch_from_url for https://api.openweathermap.org/data/2.5/weather?lat=47.76232&lon=-122.205404&appid=854749a86f71428bfcb38228996c5834&units=imperial
-2023-08-08 09:46:11,639.continuous_location.INFO Data from openweathermap: <fetch.HttpResponse object at 0x000001D7D0718F90>
-2023-08-08 09:46:11,639.continuous_location.INFO Calling get_temperature_from_openweathermap for {lat}, {long}}
-2023-08-08 09:46:11,639.continuous_location.INFO Calling fetch_from_url for https://api.openweathermap.org/data/2.5/weather?lat=33.4941704&lon=-111.9260519&appid=854749a86f71428bfcb38228996c5834&units=imperial
-2023-08-08 09:46:11,950.continuous_location.INFO Data from openweathermap: <fetch.HttpResponse object at 0x000001D7D071BD10>
-2023-08-08 09:46:11,950.continuous_location.INFO Saving temperatures to C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-06-integration\cintel-06-integration\data\mtcars_location.csv
+2023-08-09 11:35:09,540.continuous_location.INFO =============================================================
+2023-08-09 11:35:09,541.continuous_location.INFO Today is 2023-08-09 at 11:35 AM
+2023-08-09 11:35:09,541.continuous_location.INFO This file is running on: nt Windows 10
+2023-08-09 11:35:09,541.continuous_location.INFO The Python version is: 3.11.4
+2023-08-09 11:35:09,541.continuous_location.INFO The active environment path is:   C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-06-integration\cintel-06-integration\.venv
+2023-08-09 11:35:09,541.continuous_location.INFO The current working directory is: C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-06-integration\cintel-06-integration
+2023-08-09 11:35:09,542.continuous_location.INFO =============================================================
+2023-08-09 11:36:51,834.continuous_location.INFO Calling update_csv_location
+2023-08-09 11:36:51,834.continuous_location.INFO update_interval: 60
+2023-08-09 11:36:51,834.continuous_location.INFO total_runtime: 900
+2023-08-09 11:36:51,835.continuous_location.INFO num_updates: 10
+2023-08-09 11:36:51,835.continuous_location.INFO Initialized csv file at C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-06-integration\cintel-06-integration\data\mtcars_location.csv
+2023-08-09 11:36:51,835.continuous_location.INFO Calling get_temperature_from_openweathermap for {lat}, {long}}
+2023-08-09 11:36:51,836.continuous_location.INFO Calling fetch_from_url for https://api.openweathermap.org/data/2.5/weather?lat=33.79085&lon=-117.50394&appid=854749a86f71428bfcb38228996c5834&units=imperial
+2023-08-09 11:36:52,235.continuous_location.INFO Data from openweathermap: <fetch.HttpResponse object at 0x0000022F7FA5F890>
+2023-08-09 11:36:52,250.continuous_location.INFO Calling get_temperature_from_openweathermap for {lat}, {long}}
+2023-08-09 11:36:52,250.continuous_location.INFO Calling fetch_from_url for https://api.openweathermap.org/data/2.5/weather?lat=47.76232&lon=-122.205404&appid=854749a86f71428bfcb38228996c5834&units=imperial
+2023-08-09 11:36:52,609.continuous_location.INFO Data from openweathermap: <fetch.HttpResponse object at 0x0000022F7FA3FA50>
+2023-08-09 11:36:52,611.continuous_location.INFO Calling get_temperature_from_openweathermap for {lat}, {long}}
+2023-08-09 11:36:52,613.continuous_location.INFO Calling fetch_from_url for https://api.openweathermap.org/data/2.5/weather?lat=33.4941704&lon=-111.9260519&appid=854749a86f71428bfcb38228996c5834&units=imperial
+2023-08-09 11:36:52,958.continuous_location.INFO Data from openweathermap: <fetch.HttpResponse object at 0x0000022F7FA6A490>
+2023-08-09 11:36:52,958.continuous_location.INFO Saving temperatures to C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-06-integration\cintel-06-integration\data\mtcars_location.csv
