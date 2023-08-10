@@ -184,20 +184,22 @@ def get_mtcars_server_functions(input, output, session):
     @render.table
     def mtcars_location_table():
         df = get_mtcars_temp_df()
+        selected_locations = input.MTCARS_LOCATION_SELECT()
         # Filter the data based on the selected location
-        df_location = df[df["Location"] == reactive_location.get()]
-        logger.info(f"Rendering TEMP table with {len(df_location)} rows")
-        return df_location
+        df_selected_locations = df[df["Location"].isin(selected_locations)]
+        logger.info(f"Rendering TEMP table with {len(df_selected_locations)} rows")
+        return df_selected_locations
 
     @output
     @render_widget
     def mtcars_location_chart():
         df = get_mtcars_temp_df()
+        selected_locations = input.MTCARS_LOCATION_SELECT()
         # Filter the data based on the selected location
-        df_location = df[df["Location"] == reactive_location.get()]
-        logger.info(f"Rendering TEMP chart with {len(df_location)} points")
+        df_selected_locations = df[df["Location"].isin(selected_locations)]
+        logger.info(f"Rendering TEMP chart with {len(df_selected_locations)} points")
         plotly_express_plot = px.line(
-            df_location, x="Time", y="Temp_F", color="Location", markers=True
+            df_selected_locations, x="Time", y="Temp_F", color="Location", markers=True,
         )
         plotly_express_plot.update_layout(title="Continuous Temperature (F)")
         return plotly_express_plot

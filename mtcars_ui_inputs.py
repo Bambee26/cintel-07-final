@@ -12,20 +12,16 @@ from shiny import ui
 
 def get_mtcars_inputs():
     return ui.panel_sidebar(
-        ui.h2("Cars Interaction"),
+        ui.h2("Reactive Interaction"),
+        ui.h4("Please select your options from below"),
         ui.tags.hr(),
-        ui.input_slider(
-            "MTCARS_MPG_RANGE",
-            "Miles Per Gallon (MPG)",
-            min=10,
-            max=35,
-            value=[10, 35],
-        ),
+        
         ui.input_select(
             id="MTCARS_LOCATION_SELECT",
-            label="Choose a location",
-            choices=["Temescal Valley CA", "Bothell WA" , "Scottsdale AZ"],
-            selected="Temescal Valley CA",
+            label="Choose a location or locations",
+            choices=["Seattle WA", "Portland OR", "San Francisco CA", "San Diego CA", "Phoenix AZ"],
+            selected="San Diego CA",
+            multiple=True,
         ),
         ui.input_select(
             id="MTCARS_STOCK_SELECT",
@@ -39,24 +35,6 @@ def get_mtcars_inputs():
             selected = "Nordstrom Inc",
         ),
         ui.tags.hr(),
-        ui.tags.section(
-            ui.h3("Cars Table"),
-            ui.tags.p("Description of each field in the table:"),
-            ui.tags.ul(
-                ui.tags.li("mpg: Miles per Gallon"),
-                ui.tags.li("cyl: Number of cylinders"),
-                ui.tags.li("disp: Displacement (cubic inches)"),
-                ui.tags.li("hp: Gross horsepower"),
-                ui.tags.li("drat: Rear axle ratio"),
-                ui.tags.li("wt: Weight (1,000 lbs)"),
-                ui.tags.li("qsec: 1/4 mile time"),
-                ui.tags.li("vs: V/S (Engine shape; 0 = V-shaped, 1 = Straight)"),
-                ui.tags.li("am: Transmission (0 = Automatic, 1 = Manual)"),
-                ui.tags.li("gear: Number of forward gears"),
-                ui.tags.li("carb: Number of carburetors"),
-            ),
-            ui.output_table("cars_table"),
-        ),
         ui.tags.hr(),
         ui.p("🕒 Please be patient. Outputs may take a few seconds to load."),
         ui.tags.hr(),

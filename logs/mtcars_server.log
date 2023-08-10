@@ -1,44 +1,49 @@
-2023-08-09 12:23:03,114.mtcars_server.INFO =============================================================
-2023-08-09 12:23:03,114.mtcars_server.INFO Today is 2023-08-09 at 12:23 PM
-2023-08-09 12:23:03,114.mtcars_server.INFO This file is running on: nt Windows 10
-2023-08-09 12:23:03,114.mtcars_server.INFO The Python version is: 3.11.4
-2023-08-09 12:23:03,114.mtcars_server.INFO The active environment path is:   C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-06-integration\cintel-06-integration\.venv
-2023-08-09 12:23:03,114.mtcars_server.INFO The current working directory is: C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-06-integration\cintel-06-integration
-2023-08-09 12:23:03,114.mtcars_server.INFO =============================================================
-2023-08-09 12:23:07,672.mtcars_server.DEBUG filter message: Showing 32 of 32 records
-2023-08-09 12:23:07,753.mtcars_server.INFO Starting mtcars_output_widget1
-2023-08-09 12:23:07,953.mtcars_server.INFO Starting mtcars_plot1
-2023-08-09 12:23:08,888.mtcars_server.INFO READING df from C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-06-integration\cintel-06-integration\data\mtcars_location.csv
-2023-08-09 12:23:08,890.mtcars_server.INFO READING df len 3
-2023-08-09 12:23:08,890.mtcars_server.INFO init reactive_temp_df len: 3
-2023-08-09 12:23:08,891.mtcars_server.INFO mtcars_temperature_location_string starting
-2023-08-09 12:23:08,891.mtcars_server.INFO Recent Temperature in F for Temescal Valley CA.
+2023-08-10 14:22:35,783.mtcars_server.INFO =============================================================
+2023-08-10 14:22:35,784.mtcars_server.INFO Today is 2023-08-10 at 02:22 PM
+2023-08-10 14:22:35,784.mtcars_server.INFO This file is running on: nt Windows 10
+2023-08-10 14:22:35,784.mtcars_server.INFO The Python version is: 3.11.4
+2023-08-10 14:22:35,784.mtcars_server.INFO The active environment path is:   C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-06-integration\cintel-06-integration\.venv
+2023-08-10 14:22:35,784.mtcars_server.INFO The current working directory is: C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-06-integration\cintel-06-integration
+2023-08-10 14:22:35,784.mtcars_server.INFO =============================================================
+2023-08-10 14:22:38,609.mtcars_server.INFO Starting mtcars_output_widget1
+2023-08-10 14:22:38,609.mtcars_server.INFO Starting mtcars_plot1
+2023-08-10 14:22:38,611.mtcars_server.INFO READING df from C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-06-integration\cintel-06-integration\data\mtcars_location.csv
+2023-08-10 14:22:38,613.mtcars_server.INFO READING df len 5
+2023-08-10 14:22:38,614.mtcars_server.INFO init reactive_temp_df len: 5
+2023-08-10 14:22:38,617.mtcars_server.INFO mtcars_temperature_location_string starting
+2023-08-10 14:22:38,617.mtcars_server.INFO Recent Temperature in F for ('San Diego CA',).
 Updated once per minute for 15 minutes.
 Keeps the most recent 10 minutes of data.
-2023-08-09 12:23:08,892.mtcars_server.INFO Rendering TEMP table with 1 rows
-2023-08-09 12:23:08,895.mtcars_server.INFO Rendering TEMP chart with 1 points
-2023-08-09 12:23:08,936.mtcars_server.INFO READING df from C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-06-integration\cintel-06-integration\data\mtcars_stock.csv
-2023-08-09 12:23:08,937.mtcars_server.INFO READING df len 5
-2023-08-09 12:23:08,938.mtcars_server.INFO init reactive_price_df len: 5
-2023-08-09 12:23:08,938.mtcars_server.INFO mtcars_price_stocks_string starting
-2023-08-09 12:23:08,938.mtcars_server.INFO Recent Price in USD for Nordstrom Inc.
+2023-08-10 14:22:38,619.mtcars_server.INFO Rendering TEMP table with 1 rows
+2023-08-10 14:22:38,687.mtcars_server.INFO Rendering TEMP chart with 1 points
+2023-08-10 14:22:38,775.mtcars_server.INFO READING df from C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-06-integration\cintel-06-integration\data\mtcars_stock.csv
+2023-08-10 14:22:38,777.mtcars_server.INFO READING df len 5
+2023-08-10 14:22:38,777.mtcars_server.INFO init reactive_price_df len: 5
+2023-08-10 14:22:38,780.mtcars_server.INFO mtcars_price_stocks_string starting
+2023-08-10 14:22:38,780.mtcars_server.INFO Recent Price in USD for Nordstrom Inc.
 Updated once per minute for 15 minutes.
 Keeps the most recent 10 minutes of data.
-2023-08-09 12:23:08,940.mtcars_server.INFO Rendering price table with 1 rows
-2023-08-09 12:23:08,942.mtcars_server.INFO Rendering Price chart with 1 points
-2023-08-09 12:23:10,900.mtcars_server.INFO READING df from C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-06-integration\cintel-06-integration\data\mtcars_location.csv
-2023-08-09 12:23:10,903.mtcars_server.INFO READING df len 3
-2023-08-09 12:23:10,904.mtcars_server.INFO Rendering TEMP table with 1 rows
-2023-08-09 12:23:10,908.mtcars_server.INFO Rendering TEMP chart with 1 points
-2023-08-09 12:23:10,957.mtcars_server.INFO READING df from C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-06-integration\cintel-06-integration\data\mtcars_stock.csv
-2023-08-09 12:23:10,959.mtcars_server.INFO READING df len 5
-2023-08-09 12:23:10,960.mtcars_server.INFO Rendering price table with 1 rows
-2023-08-09 12:23:10,961.mtcars_server.INFO Rendering Price chart with 1 points
-2023-08-09 12:24:11,054.mtcars_server.INFO READING df from C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-06-integration\cintel-06-integration\data\mtcars_location.csv
-2023-08-09 12:24:11,055.mtcars_server.INFO READING df len 6
-2023-08-09 12:24:11,056.mtcars_server.INFO Rendering TEMP table with 2 rows
-2023-08-09 12:24:11,058.mtcars_server.INFO Rendering TEMP chart with 2 points
-2023-08-09 12:24:12,064.mtcars_server.INFO READING df from C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-06-integration\cintel-06-integration\data\mtcars_stock.csv
-2023-08-09 12:24:12,067.mtcars_server.INFO READING df len 10
-2023-08-09 12:24:12,069.mtcars_server.INFO Rendering price table with 2 rows
-2023-08-09 12:24:12,072.mtcars_server.INFO Rendering Price chart with 2 points
+2023-08-10 14:22:38,783.mtcars_server.INFO Rendering price table with 1 rows
+2023-08-10 14:22:38,785.mtcars_server.INFO Rendering Price chart with 1 points
+2023-08-10 14:22:41,466.mtcars_server.INFO READING df from C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-06-integration\cintel-06-integration\data\mtcars_location.csv
+2023-08-10 14:22:41,468.mtcars_server.INFO READING df len 5
+2023-08-10 14:22:41,468.mtcars_server.INFO Rendering TEMP table with 1 rows
+2023-08-10 14:22:41,471.mtcars_server.INFO Rendering TEMP chart with 1 points
+2023-08-10 14:22:41,513.mtcars_server.INFO READING df from C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-06-integration\cintel-06-integration\data\mtcars_stock.csv
+2023-08-10 14:22:41,516.mtcars_server.INFO READING df len 5
+2023-08-10 14:22:41,516.mtcars_server.INFO Rendering price table with 1 rows
+2023-08-10 14:22:41,519.mtcars_server.INFO Rendering Price chart with 1 points
+2023-08-10 14:22:41,755.mtcars_server.INFO init reactive_temp_df len: 5
+2023-08-10 14:22:41,756.mtcars_server.INFO Rendering TEMP table with 2 rows
+2023-08-10 14:22:41,758.mtcars_server.INFO Rendering TEMP chart with 2 points
+2023-08-10 14:22:41,861.mtcars_server.INFO mtcars_temperature_location_string starting
+2023-08-10 14:22:41,861.mtcars_server.INFO Recent Temperature in F for ('Seattle WA', 'San Diego CA').
+Updated once per minute for 15 minutes.
+Keeps the most recent 10 minutes of data.
+2023-08-10 14:22:45,177.mtcars_server.INFO init reactive_temp_df len: 5
+2023-08-10 14:22:45,181.mtcars_server.INFO Rendering TEMP table with 3 rows
+2023-08-10 14:22:45,185.mtcars_server.INFO Rendering TEMP chart with 3 points
+2023-08-10 14:22:45,222.mtcars_server.INFO mtcars_temperature_location_string starting
+2023-08-10 14:22:45,222.mtcars_server.INFO Recent Temperature in F for ('Seattle WA', 'Portland OR', 'San Diego CA').
+Updated once per minute for 15 minutes.
+Keeps the most recent 10 minutes of data.
