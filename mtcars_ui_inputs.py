@@ -18,14 +18,18 @@ def get_mtcars_inputs():
         
         ui.input_select(
             id="MTCARS_LOCATION_SELECT",
-            label="Choose a location or locations",
-            choices=["Seattle WA", "Portland OR", "San Francisco CA", "San Diego CA", "Phoenix AZ"],
+            label="Choose your location(s) (hold CTRL to select multiple)",
+            choices=["Seattle WA",
+                     "Portland OR", 
+                     "San Francisco CA", 
+                     "San Diego CA", 
+                     "Phoenix AZ"],
             selected="San Diego CA",
             multiple=True,
         ),
         ui.input_select(
             id="MTCARS_STOCK_SELECT",
-            label="Choose a company",
+            label="Choose your stock(s) (hold CTRL to select multiple)",
             choices=["Nordstrom Inc",
             "Lululemon Athletica Inc",
             "Starbucks Corporation",
@@ -33,6 +37,7 @@ def get_mtcars_inputs():
             "Amazon.com Inc",
             ],
             selected = "Nordstrom Inc",
+            multiple=True
         ),
         ui.tags.hr(),
         ui.tags.hr(),
