@@ -9,6 +9,8 @@ import pathlib
 from shiny import render
 import pandas as pd
 import seaborn as sns
+import plotly.io as pio
+pio.templates.default = 'plotly_dark'
 
 from util_logger import setup_logger
 
