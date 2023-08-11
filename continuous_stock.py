@@ -8,10 +8,8 @@ import asyncio
 import os
 from pathlib import Path
 from datetime import datetime
-from random import randint
 
 import pandas as pd
-import yfinance as yf
 from collections import deque
 
 from util_logger import setup_logger

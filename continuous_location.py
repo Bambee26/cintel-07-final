@@ -6,7 +6,6 @@ import asyncio
 from datetime import datetime
 from pathlib import Path
 import os
-from random import randint
 
 import pandas as pd
 from collections import deque
@@ -47,11 +46,9 @@ async def get_temperature_from_openweathermap(lat, long):
     result = await fetch_from_url(open_weather_url, "json")
     logger.info(f"Data from openweathermap: {result}")
     temp_F = result.data["main"]["temp"]
-    # temp_F = randint(68, 77)  # Use to test code without calling API
     return temp_F
 
 
-# Function to create or overwrite the CSV file with column headings
 def init_csv_file(file_path):
     df_empty = pd.DataFrame(
         columns=["Location", "Latitude", "Longitude", "Time", "Temp_F"]
@@ -64,29 +61,27 @@ async def update_csv_location():
     logger.info("Calling update_csv_location")
     try:
         locations = ["Seattle WA", "Portland OR", "San Francisco CA", "San Diego CA", "Phoenix AZ"]
-        update_interval = 60  # Update every 1 minute (60 seconds)
-        total_runtime = 15 * 60  # Total runtime maximum of 15 minutes
-        num_updates = 20  # Keep the most recent 10 readings
+        update_interval = 60
+        total_runtime = 15 * 60
+        num_updates = 20
         logger.info(f"update_interval: {update_interval}")
         logger.info(f"total_runtime: {total_runtime}")
         logger.info(f"num_updates: {num_updates}")
 
-        # Use a deque to store just the last, most recent 10 readings in order
         records_deque = deque(maxlen=num_updates)
 
         fp = Path(__file__).parent.joinpath("data").joinpath("reactive_location.csv")
 
-        # Check if the file exists, if not, create it with only the column headings
         if not os.path.exists(fp):
             init_csv_file(fp)
 
         logger.info(f"Initialized csv file at {fp}")
 
-        for _ in range(num_updates):  # To get num_updates readings
+        for _ in range(num_updates):  
             for location in locations:
                 lat, long = lookup_lat_long(location)
                 new_temp = await get_temperature_from_openweathermap(lat, long)
-                time_now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")  # Current time
+                time_now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")  
                 new_record = {
                     "Location": location,
                     "Latitude": lat,
@@ -96,14 +91,11 @@ async def update_csv_location():
                 }
                 records_deque.append(new_record)
 
-            # Use the deque to make a DataFrame
-            df = pd.DataFrame(records_deque)
+                df = pd.DataFrame(records_deque)
 
-            # Save the DataFrame to the CSV file, deleting its contents before writing
             df.to_csv(fp, index=False, mode="w")
             logger.info(f"Saving temperatures to {fp}")
 
-            # Wait for update_interval seconds before the next reading
             await asyncio.sleep(update_interval)
 
     except Exception as e:
