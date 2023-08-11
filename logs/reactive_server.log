@@ -1,7 +1,40 @@
-2023-08-11 13:05:21,464.reactive_server.INFO =============================================================
-2023-08-11 13:05:21,464.reactive_server.INFO Today is 2023-08-11 at 01:05 PM
-2023-08-11 13:05:21,464.reactive_server.INFO This file is running on: nt Windows 10
-2023-08-11 13:05:21,464.reactive_server.INFO The Python version is: 3.11.4
-2023-08-11 13:05:21,464.reactive_server.INFO The active environment path is:   C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-07-final\cintel-07-final\.venv
-2023-08-11 13:05:21,464.reactive_server.INFO The current working directory is: C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-07-final\cintel-07-final
-2023-08-11 13:05:21,464.reactive_server.INFO =============================================================
+2023-08-11 13:57:14,510.reactive_server.INFO =============================================================
+2023-08-11 13:57:14,510.reactive_server.INFO Today is 2023-08-11 at 01:57 PM
+2023-08-11 13:57:14,510.reactive_server.INFO This file is running on: nt Windows 10
+2023-08-11 13:57:14,510.reactive_server.INFO The Python version is: 3.11.4
+2023-08-11 13:57:14,510.reactive_server.INFO The active environment path is:   C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-07-final\cintel-07-final\.venv
+2023-08-11 13:57:14,510.reactive_server.INFO The current working directory is: C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-07-final\cintel-07-final
+2023-08-11 13:57:14,510.reactive_server.INFO =============================================================
+2023-08-11 13:57:16,393.reactive_server.INFO READING df from C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-07-final\cintel-07-final\data\reactive_location.csv
+2023-08-11 13:57:16,395.reactive_server.INFO READING df len 5
+2023-08-11 13:57:16,395.reactive_server.INFO init reactive_temp_df len: 5
+2023-08-11 13:57:16,397.reactive_server.INFO reactive_temperature_location_string starting
+2023-08-11 13:57:16,397.reactive_server.INFO Recent Temperature in F for ('San Diego CA',).
+Updated once per minute for 15 minutes.
+Keeps the most recent 10 minutes of data.
+2023-08-11 13:57:16,403.reactive_server.INFO Rendering TEMP table with 1 rows
+2023-08-11 13:57:16,730.reactive_server.INFO Rendering TEMP chart with 1 points
+2023-08-11 13:57:16,816.reactive_server.INFO READING df from C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-07-final\cintel-07-final\data\reactive_stock.csv
+2023-08-11 13:57:16,829.reactive_server.INFO READING df len 5
+2023-08-11 13:57:16,830.reactive_server.INFO Updated reactive_stock selection: ('Nordstrom Inc',). DataFrame length: 5
+2023-08-11 13:57:16,832.reactive_server.INFO reactive_stock_string starting
+2023-08-11 13:57:16,832.reactive_server.INFO Recent Price in USD for ('Nordstrom Inc',).
+Updated once per minute for 15 minutes.
+Keeps the most recent 10 minutes of data.
+2023-08-11 13:57:16,835.reactive_server.INFO Rendering price table with 1 rows
+2023-08-11 13:57:16,837.reactive_server.INFO Rendering Price chart with 1 points
+2023-08-11 13:57:19,441.reactive_server.INFO READING df from C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-07-final\cintel-07-final\data\reactive_location.csv
+2023-08-11 13:57:19,443.reactive_server.INFO READING df len 5
+2023-08-11 13:57:19,444.reactive_server.INFO Rendering TEMP table with 1 rows
+2023-08-11 13:57:19,447.reactive_server.INFO Rendering TEMP chart with 1 points
+2023-08-11 13:57:19,494.reactive_server.INFO READING df from C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-07-final\cintel-07-final\data\reactive_stock.csv
+2023-08-11 13:57:19,495.reactive_server.INFO READING df len 5
+2023-08-11 13:57:19,496.reactive_server.INFO Rendering price table with 1 rows
+2023-08-11 13:57:19,500.reactive_server.INFO Rendering Price chart with 1 points
+2023-08-11 13:57:20,643.reactive_server.INFO init reactive_temp_df len: 5
+2023-08-11 13:57:20,644.reactive_server.INFO Rendering TEMP table with 4 rows
+2023-08-11 13:57:20,647.reactive_server.INFO Rendering TEMP chart with 4 points
+2023-08-11 13:57:20,694.reactive_server.INFO reactive_temperature_location_string starting
+2023-08-11 13:57:20,695.reactive_server.INFO Recent Temperature in F for ('Seattle WA', 'Portland OR', 'San Francisco CA', 'San Diego CA').
+Updated once per minute for 15 minutes.
+Keeps the most recent 10 minutes of data.

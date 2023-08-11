@@ -23,6 +23,7 @@ csv_stocks = Path(__file__).parent.joinpath("data").joinpath("reactive_stock.csv
 def get_reactive_server_functions(input, output, session):
     """Define functions to create UI outputs."""
 
+
     reactive_location = reactive.Value("San Diego CA")
     reactive_stock = reactive.Value("Norstrom Inc")
 

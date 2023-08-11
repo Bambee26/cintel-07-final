@@ -16,3 +16,4 @@ shinywidgets
 yfinance
 dash
 seaborn
+pathlib
