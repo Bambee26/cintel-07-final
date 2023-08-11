@@ -1,23 +1,19 @@
 """
-Purpose: Provide user interaction options for MT Cars dataset.
-
-IDs must be unique. They are capitalized in this app for clarity (not typical).
-The IDs are case-sensitive and must match the server code exactly.
-Preface IDs with the dataset name to avoid naming conflicts.
+Purpose: Provide user interaction options for Reactive dataset.
 
 """
 from shiny import ui
 
 # Define the UI inputs and include our new selection options
 
-def get_mtcars_inputs():
+def get_reactive_inputs():
     return ui.panel_sidebar(
         ui.h2("Reactive Interaction"),
         ui.h4("Please select your options from below"),
         ui.tags.hr(),
         
         ui.input_select(
-            id="MTCARS_LOCATION_SELECT",
+            id="REACTIVE_LOCATION_SELECT",
             label="Choose your location(s) (hold CTRL to select multiple)",
             choices=["Seattle WA",
                      "Portland OR", 
@@ -28,7 +24,7 @@ def get_mtcars_inputs():
             multiple=True,
         ),
         ui.input_select(
-            id="MTCARS_STOCK_SELECT",
+            id="REACTIVE_STOCK_SELECT",
             label="Choose your stock(s) (hold CTRL to select multiple)",
             choices=["Nordstrom Inc",
             "Lululemon Athletica Inc",

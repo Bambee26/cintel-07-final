@@ -111,7 +111,7 @@ async def update_csv_location():
         # Use a deque to store just the last, most recent 10 readings in order
         records_deque = deque(maxlen=num_updates)
 
-        fp = Path(__file__).parent.joinpath("data").joinpath("mtcars_location.csv")
+        fp = Path(__file__).parent.joinpath("data").joinpath("reactive_location.csv")
 
         # Check if the file exists, if not, create it with only the column headings
         if not os.path.exists(fp):

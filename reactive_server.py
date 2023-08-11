@@ -13,18 +13,18 @@ import plotly.io as pio
 pio.templates.default = 'plotly_dark'
 
 # Local Imports
-from mtcars_get_basics import get_mtcars_df
+from reactive_get_basics import get_reactive_df
 from util_logger import setup_logger
 
 # Set up a global logger for this file
 logger, logname = setup_logger(__name__)
 
 # Declare our file path variables globally so they can be used in all the functions (like logger)
-csv_locations = Path(__file__).parent.joinpath("data").joinpath("mtcars_location.csv")
-csv_stocks = Path(__file__).parent.joinpath("data").joinpath("mtcars_stock.csv")
+csv_locations = Path(__file__).parent.joinpath("data").joinpath("reactive_location.csv")
+csv_stocks = Path(__file__).parent.joinpath("data").joinpath("reactive_stock.csv")
 
 
-def get_mtcars_server_functions(input, output, session):
+def get_reactive_server_functions(input, output, session):
     """Define functions to create UI outputs."""
 
     # First, declare shared reactive values (used between functions) up front
@@ -35,22 +35,19 @@ def get_mtcars_server_functions(input, output, session):
 
     reactive_df = reactive.Value()
      
-    original_df = get_mtcars_df()
+    original_df = get_reactive_df()
     total_count = len(original_df)
 
 ##Location Reactions
     @reactive.Effect
-    @reactive.event(input.MTCARS_LOCATION_SELECT)
+    @reactive.event(input.REACTIVE_LOCATION_SELECT)
     def _():
-        """Set two reactive values (the location and temps df) when user changes location"""
-        reactive_location.set(input.MTCARS_LOCATION_SELECT())
-        # init_mtcars_temps_csv()
-        df = get_mtcars_temp_df()
+        reactive_location.set(input.REACTIVE_LOCATION_SELECT())
+        df = get_reactive_temp_df()
         logger.info(f"init reactive_temp_df len: {len(df)}")
 
     @reactive.file_reader(str(csv_locations))
-    def get_mtcars_temp_df():
-        """Return mtcars temperatures pandas Dataframe."""
+    def get_reactive_temp_df():
         logger.info(f"READING df from {csv_locations}")
         df = pd.read_csv(csv_locations)
         logger.info(f"READING df len {len(df)}")
@@ -58,9 +55,9 @@ def get_mtcars_server_functions(input, output, session):
 
     @output
     @render.text
-    def mtcars_location_string():
+    def reactive_location_string():
         """Return a string based on selected location."""
-        logger.info("mtcars_temperature_location_string starting")
+        logger.info("reactive_temperature_location_string starting")
         selected = reactive_location.get()
         line1 = f"Recent Temperature in F for {selected}."
         line2 = "Updated once per minute for 15 minutes."
@@ -71,20 +68,18 @@ def get_mtcars_server_functions(input, output, session):
 
     @output
     @render.table
-    def mtcars_location_table():
-        df = get_mtcars_temp_df()
-        selected_locations = input.MTCARS_LOCATION_SELECT()
-        # Filter the data based on the selected location
+    def reactive_location_table():
+        df = get_reactive_temp_df()
+        selected_locations = input.REACTIVE_LOCATION_SELECT()
         df_selected_locations = df[df["Location"].isin(selected_locations)]
         logger.info(f"Rendering TEMP table with {len(df_selected_locations)} rows")
         return df_selected_locations
 
     @output
     @render_widget
-    def mtcars_location_chart():
-        df = get_mtcars_temp_df()
-        selected_locations = input.MTCARS_LOCATION_SELECT()
-        # Filter the data based on the selected location
+    def reactive_location_chart():
+        df = get_reactive_temp_df()
+        selected_locations = input.REACTIVE_LOCATION_SELECT()
         df_selected_locations = df[df["Location"].isin(selected_locations)]
         logger.info(f"Rendering TEMP chart with {len(df_selected_locations)} points")
         plotly_express_plot = px.line(
@@ -95,17 +90,15 @@ def get_mtcars_server_functions(input, output, session):
     
 ##Stock Reactions
     @reactive.Effect
-    @reactive.event(input.MTCARS_STOCK_SELECT)
+    @reactive.event(input.REACTIVE_STOCK_SELECT)
     def _():
         """Set reactive_stock and update data when user changes selection"""
-        reactive_stock.set(input.MTCARS_STOCK_SELECT())
-        # init_mtcars_stock_csv()  # Initialize stocks data if needed
-        df = get_mtcars_stock_df()
+        reactive_stock.set(input.REACTIVE_STOCK_SELECT())
+        df = get_reactive_stock_df()
         logger.info(f"Updated reactive_stock selection: {reactive_stock.get()}. DataFrame length: {len(df)}")
 
     @reactive.file_reader(str(csv_stocks))
-    def get_mtcars_stock_df():
-        """Return mtcars stocks pandas DataFrame."""
+    def get_reactive_stock_df():
         logger.info(f"READING df from {csv_stocks}")
         df = pd.read_csv(csv_stocks)
         logger.info(f"READING df len {len(df)}")
@@ -113,9 +106,8 @@ def get_mtcars_server_functions(input, output, session):
 
     @output
     @render.text
-    def mtcars_stock_string():
-        """Return a string based on selected stock."""
-        logger.info("mtcars_stock_string starting")
+    def reactive_stock_string():
+        logger.info("reactive_stock_string starting")
         selected = reactive_stock.get()
         line1 = f"Recent Price in USD for {selected}."
         line2 = "Updated once per minute for 15 minutes."
@@ -126,20 +118,18 @@ def get_mtcars_server_functions(input, output, session):
 
     @output
     @render.table
-    def mtcars_stock_table():
-        df = get_mtcars_stock_df()
-        selected_stocks = input.MTCARS_STOCK_SELECT()  # Get selected stocks from the input
-        # Filter the data based on the selected tickers
+    def reactive_stock_table():
+        df = get_reactive_stock_df()
+        selected_stocks = input.REACTIVE_STOCK_SELECT()
         df_selected_stocks = df[df["Company"].isin(selected_stocks)]
         logger.info(f"Rendering price table with {len(df_selected_stocks)} rows")
         return df_selected_stocks
 
     @output
     @render_widget
-    def mtcars_stock_chart():
-        df = get_mtcars_stock_df()
-        selected_stocks = input.MTCARS_STOCK_SELECT()  # Get selected stocks from the input
-        # Filter the data based on the selected stocks
+    def reactive_stock_chart():
+        df = get_reactive_stock_df()
+        selected_stocks = input.REACTIVE_STOCK_SELECT()
         df_selected_stocks = df[df["Company"].isin(selected_stocks)]
         logger.info(f"Rendering Price chart with {len(df_selected_stocks)} points")
         plotly_express_plot = px.line(
@@ -150,10 +140,10 @@ def get_mtcars_server_functions(input, output, session):
 
 
     return [
-        mtcars_location_string,
-        mtcars_location_table,
-        mtcars_location_chart,
-        mtcars_stock_string,
-        mtcars_stock_table,
-        mtcars_stock_chart,
+        reactive_location_string,
+        reactive_location_table,
+        reactive_location_chart,
+        reactive_stock_string,
+        reactive_stock_table,
+        reactive_stock_chart,
     ]
