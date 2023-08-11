@@ -1,40 +1,40 @@
-2023-08-10 15:24:22,746.mtcars_server.INFO =============================================================
-2023-08-10 15:24:22,746.mtcars_server.INFO Today is 2023-08-10 at 03:24 PM
-2023-08-10 15:24:22,746.mtcars_server.INFO This file is running on: nt Windows 10
-2023-08-10 15:24:22,746.mtcars_server.INFO The Python version is: 3.11.4
-2023-08-10 15:24:22,746.mtcars_server.INFO The active environment path is:   C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-06-integration\cintel-06-integration\.venv
-2023-08-10 15:24:22,746.mtcars_server.INFO The current working directory is: C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-06-integration\cintel-06-integration
-2023-08-10 15:24:22,746.mtcars_server.INFO =============================================================
-2023-08-10 15:24:26,323.mtcars_server.INFO READING df from C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-06-integration\cintel-06-integration\data\mtcars_location.csv
-2023-08-10 15:24:26,324.mtcars_server.INFO READING df len 5
-2023-08-10 15:24:26,325.mtcars_server.INFO init reactive_temp_df len: 5
-2023-08-10 15:24:26,326.mtcars_server.INFO mtcars_temperature_location_string starting
-2023-08-10 15:24:26,326.mtcars_server.INFO Recent Temperature in F for ('San Diego CA',).
+2023-08-11 09:28:36,675.mtcars_server.INFO =============================================================
+2023-08-11 09:28:36,675.mtcars_server.INFO Today is 2023-08-11 at 09:28 AM
+2023-08-11 09:28:36,675.mtcars_server.INFO This file is running on: nt Windows 10
+2023-08-11 09:28:36,675.mtcars_server.INFO The Python version is: 3.11.4
+2023-08-11 09:28:36,675.mtcars_server.INFO The active environment path is:   C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-07-final\cintel-07-final\.venv
+2023-08-11 09:28:36,680.mtcars_server.INFO The current working directory is: C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-07-final\cintel-07-final
+2023-08-11 09:28:36,680.mtcars_server.INFO =============================================================
+2023-08-11 09:28:39,330.mtcars_server.INFO READING df from C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-07-final\cintel-07-final\data\mtcars_location.csv
+2023-08-11 09:28:39,334.mtcars_server.INFO READING df len 5
+2023-08-11 09:28:39,336.mtcars_server.INFO init reactive_temp_df len: 5
+2023-08-11 09:28:39,337.mtcars_server.INFO mtcars_temperature_location_string starting
+2023-08-11 09:28:39,337.mtcars_server.INFO Recent Temperature in F for ('San Diego CA',).
 Updated once per minute for 15 minutes.
 Keeps the most recent 10 minutes of data.
-2023-08-10 15:24:26,327.mtcars_server.INFO Rendering TEMP table with 1 rows
-2023-08-10 15:24:26,623.mtcars_server.INFO Rendering TEMP chart with 1 points
-2023-08-10 15:24:26,711.mtcars_server.INFO READING df from C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-06-integration\cintel-06-integration\data\mtcars_stock.csv
-2023-08-10 15:24:26,712.mtcars_server.INFO READING df len 5
-2023-08-10 15:24:26,713.mtcars_server.INFO Updated reactive_stock selection: ('Nordstrom Inc',). DataFrame length: 5
-2023-08-10 15:24:26,714.mtcars_server.INFO mtcars_stock_string starting
-2023-08-10 15:24:26,714.mtcars_server.INFO Recent Price in USD for ('Nordstrom Inc',).
+2023-08-11 09:28:39,340.mtcars_server.INFO Rendering TEMP table with 1 rows
+2023-08-11 09:28:39,682.mtcars_server.INFO Rendering TEMP chart with 1 points
+2023-08-11 09:28:39,776.mtcars_server.INFO READING df from C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-07-final\cintel-07-final\data\mtcars_stock.csv
+2023-08-11 09:28:39,778.mtcars_server.INFO READING df len 5
+2023-08-11 09:28:39,778.mtcars_server.INFO Updated reactive_stock selection: ('Nordstrom Inc',). DataFrame length: 5
+2023-08-11 09:28:39,778.mtcars_server.INFO mtcars_stock_string starting
+2023-08-11 09:28:39,779.mtcars_server.INFO Recent Price in USD for ('Nordstrom Inc',).
 Updated once per minute for 15 minutes.
 Keeps the most recent 10 minutes of data.
-2023-08-10 15:24:26,717.mtcars_server.INFO Rendering price table with 1 rows
-2023-08-10 15:24:26,719.mtcars_server.INFO Rendering Price chart with 1 points
-2023-08-10 15:24:29,352.mtcars_server.INFO READING df from C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-06-integration\cintel-06-integration\data\mtcars_location.csv
-2023-08-10 15:24:29,354.mtcars_server.INFO READING df len 5
-2023-08-10 15:24:29,355.mtcars_server.INFO Rendering TEMP table with 1 rows
-2023-08-10 15:24:29,357.mtcars_server.INFO Rendering TEMP chart with 1 points
-2023-08-10 15:24:29,399.mtcars_server.INFO READING df from C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-06-integration\cintel-06-integration\data\mtcars_stock.csv
-2023-08-10 15:24:29,401.mtcars_server.INFO READING df len 5
-2023-08-10 15:24:29,402.mtcars_server.INFO Rendering price table with 1 rows
-2023-08-10 15:24:29,404.mtcars_server.INFO Rendering Price chart with 1 points
-2023-08-10 15:24:31,905.mtcars_server.INFO init reactive_temp_df len: 5
-2023-08-10 15:24:31,906.mtcars_server.INFO Rendering TEMP table with 2 rows
-2023-08-10 15:24:31,908.mtcars_server.INFO Rendering TEMP chart with 2 points
-2023-08-10 15:24:31,946.mtcars_server.INFO mtcars_temperature_location_string starting
-2023-08-10 15:24:31,947.mtcars_server.INFO Recent Temperature in F for ('Seattle WA', 'San Diego CA').
+2023-08-11 09:28:39,781.mtcars_server.INFO Rendering price table with 1 rows
+2023-08-11 09:28:39,782.mtcars_server.INFO Rendering Price chart with 1 points
+2023-08-11 09:28:42,298.mtcars_server.INFO READING df from C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-07-final\cintel-07-final\data\mtcars_location.csv
+2023-08-11 09:28:42,299.mtcars_server.INFO READING df len 5
+2023-08-11 09:28:42,300.mtcars_server.INFO Rendering TEMP table with 1 rows
+2023-08-11 09:28:42,302.mtcars_server.INFO Rendering TEMP chart with 1 points
+2023-08-11 09:28:42,345.mtcars_server.INFO READING df from C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-07-final\cintel-07-final\data\mtcars_stock.csv
+2023-08-11 09:28:42,347.mtcars_server.INFO READING df len 5
+2023-08-11 09:28:42,348.mtcars_server.INFO Rendering price table with 1 rows
+2023-08-11 09:28:42,352.mtcars_server.INFO Rendering Price chart with 1 points
+2023-08-11 09:28:48,155.mtcars_server.INFO init reactive_temp_df len: 5
+2023-08-11 09:28:48,156.mtcars_server.INFO Rendering TEMP table with 4 rows
+2023-08-11 09:28:48,159.mtcars_server.INFO Rendering TEMP chart with 4 points
+2023-08-11 09:28:48,200.mtcars_server.INFO mtcars_temperature_location_string starting
+2023-08-11 09:28:48,200.mtcars_server.INFO Recent Temperature in F for ('Seattle WA', 'Portland OR', 'San Francisco CA', 'San Diego CA').
 Updated once per minute for 15 minutes.
 Keeps the most recent 10 minutes of data.

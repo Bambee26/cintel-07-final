@@ -1,10 +1,10 @@
-2023-08-10 15:24:22,746.app.INFO =============================================================
-2023-08-10 15:24:22,746.app.INFO Today is 2023-08-10 at 03:24 PM
-2023-08-10 15:24:22,746.app.INFO This file is running on: nt Windows 10
-2023-08-10 15:24:22,746.app.INFO The Python version is: 3.11.4
-2023-08-10 15:24:22,746.app.INFO The active environment path is:   C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-06-integration\cintel-06-integration\.venv
-2023-08-10 15:24:22,746.app.INFO The current working directory is: C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-06-integration\cintel-06-integration
-2023-08-10 15:24:22,746.app.INFO =============================================================
-2023-08-10 15:24:26,310.app.INFO Starting server ...
-2023-08-10 15:24:26,310.app.INFO Starting continuous updates ...
-2023-08-10 15:24:26,765.app.INFO Calling continuous updates ...
+2023-08-11 09:28:36,680.app.INFO =============================================================
+2023-08-11 09:28:36,680.app.INFO Today is 2023-08-11 at 09:28 AM
+2023-08-11 09:28:36,680.app.INFO This file is running on: nt Windows 10
+2023-08-11 09:28:36,680.app.INFO The Python version is: 3.11.4
+2023-08-11 09:28:36,684.app.INFO The active environment path is:   C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-07-final\cintel-07-final\.venv
+2023-08-11 09:28:36,684.app.INFO The current working directory is: C:\Users\bambe\Documents\NWMSU\44630_ContinousIntelligence\cintel-07-final\cintel-07-final
+2023-08-11 09:28:36,685.app.INFO =============================================================
+2023-08-11 09:28:39,318.app.INFO Starting server ...
+2023-08-11 09:28:39,319.app.INFO Starting continuous updates ...
+2023-08-11 09:28:39,834.app.INFO Calling continuous updates ...
